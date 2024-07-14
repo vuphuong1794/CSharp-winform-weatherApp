@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Weather_Application
 {
-    //dua tren json data cua openweather api tra ve
+    //dua tren json data cua Openweather Api tra ve
     class WeatherInfo
     {
         //get: dinh nghia cach lay gtri cua thuoc tinh do
