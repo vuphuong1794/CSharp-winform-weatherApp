@@ -1,0 +1,9 @@
+E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Weather Application.exe.config
+E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Weather Application.exe
+E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Weather Application.pdb
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.exe
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.pdb
