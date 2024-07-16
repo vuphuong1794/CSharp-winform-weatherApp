@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Weather_Application
 {
+    //test
     //dua tren json data cua Openweather Api tra ve
     class WeatherInfo
     {
