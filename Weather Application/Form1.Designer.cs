@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_search = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lab_condition = new System.Windows.Forms.Label();
+            this.pic_icon = new System.Windows.Forms.PictureBox();
+            this.lab_condtion = new System.Windows.Forms.Label();
             this.lab_detail = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lab_pressure = new System.Windows.Forms.Label();
             this.lab_sunset = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_close
@@ -116,17 +116,28 @@
             this.btn_search.UseVisualStyleBackColor = false;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
-            // pictureBox1
+            // pic_icon
             // 
+<<<<<<< Updated upstream
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Location = new System.Drawing.Point(201, 179);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+=======
+            this.pic_icon.BackColor = System.Drawing.Color.Transparent;
+            this.pic_icon.Location = new System.Drawing.Point(93, 201);
+            this.pic_icon.Name = "pic_icon";
+            this.pic_icon.Size = new System.Drawing.Size(208, 212);
+            this.pic_icon.TabIndex = 6;
+            this.pic_icon.TabStop = false;
+            this.pic_icon.Click += new System.EventHandler(this.pictureBox1_Click);
+>>>>>>> Stashed changes
             // 
-            // lab_condition
+            // lab_condtion
             // 
+<<<<<<< Updated upstream
             this.lab_condition.AutoSize = true;
             this.lab_condition.BackColor = System.Drawing.Color.Transparent;
             this.lab_condition.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,6 +147,17 @@
             this.lab_condition.Size = new System.Drawing.Size(143, 28);
             this.lab_condition.TabIndex = 7;
             this.lab_condition.Text = "Conditions";
+=======
+            this.lab_condtion.AutoSize = true;
+            this.lab_condtion.BackColor = System.Drawing.Color.Transparent;
+            this.lab_condtion.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_condtion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lab_condtion.Location = new System.Drawing.Point(337, 201);
+            this.lab_condtion.Name = "lab_condtion";
+            this.lab_condtion.Size = new System.Drawing.Size(143, 28);
+            this.lab_condtion.TabIndex = 7;
+            this.lab_condtion.Text = "Conditions";
+>>>>>>> Stashed changes
             // 
             // lab_detail
             // 
@@ -191,7 +213,11 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.label9.Location = new System.Drawing.Point(402, 276);
+=======
+            this.label9.Location = new System.Drawing.Point(630, 201);
+>>>>>>> Stashed changes
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(171, 28);
             this.label9.TabIndex = 12;
@@ -203,7 +229,11 @@
             this.lab_windspeed.BackColor = System.Drawing.Color.Transparent;
             this.lab_windspeed.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_windspeed.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.lab_windspeed.Location = new System.Drawing.Point(577, 276);
+=======
+            this.lab_windspeed.Location = new System.Drawing.Point(805, 201);
+>>>>>>> Stashed changes
             this.lab_windspeed.Name = "lab_windspeed";
             this.lab_windspeed.Size = new System.Drawing.Size(58, 28);
             this.lab_windspeed.TabIndex = 13;
@@ -215,7 +245,11 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.label11.Location = new System.Drawing.Point(402, 335);
+=======
+            this.label11.Location = new System.Drawing.Point(630, 260);
+>>>>>>> Stashed changes
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(132, 28);
             this.label11.TabIndex = 14;
@@ -227,7 +261,11 @@
             this.lab_pressure.BackColor = System.Drawing.Color.Transparent;
             this.lab_pressure.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_pressure.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< Updated upstream
             this.lab_pressure.Location = new System.Drawing.Point(577, 335);
+=======
+            this.lab_pressure.Location = new System.Drawing.Point(805, 260);
+>>>>>>> Stashed changes
             this.lab_pressure.Name = "lab_pressure";
             this.lab_pressure.Size = new System.Drawing.Size(58, 28);
             this.lab_pressure.TabIndex = 15;
@@ -262,8 +300,8 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lab_detail);
-            this.Controls.Add(this.lab_condition);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lab_condtion);
+            this.Controls.Add(this.pic_icon);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -273,7 +311,11 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+<<<<<<< Updated upstream
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).EndInit();
+>>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,8 +329,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_search;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lab_condition;
+        private System.Windows.Forms.PictureBox pic_icon;
+        private System.Windows.Forms.Label lab_condtion;
         private System.Windows.Forms.Label lab_detail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
