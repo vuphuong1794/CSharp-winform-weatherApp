@@ -1,0 +1,10 @@
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Form1.resources
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
+C:\Users\dangh\OneDrive\Máy tính\C#\New folder\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb

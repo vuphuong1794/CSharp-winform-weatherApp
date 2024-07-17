@@ -19,7 +19,7 @@ namespace Weather_Application
 
         private void label12_Click(object sender, EventArgs e)
         {
-
+            kvkvkv
         }
 
         string APIKey = "4359ef1cd11b4c97b0da50cce76d01e7";
