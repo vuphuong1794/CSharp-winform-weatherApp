@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.Net;
+using Weather_Application;
 
-namespace Weather_Application
+namespace WeatherApp
+
 {
     public partial class Form1 : Form
     {
@@ -27,18 +29,38 @@ namespace Weather_Application
         string APIKey = "4359ef1cd11b4c97b0da50cce76d01e7";
         private void btn_search_Click(object sender, EventArgs e)
         {
-       
+            getWeather();
+        }
+
+        private void getWeather()
+        {
+            using (WebClient web = new WebClient())
+            {
+                string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", tbCity.Text, APIKey);
+                var json = web.DownloadString(url);
+                WeatherInfo.root Info = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
+                pic_icon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
+                lab_condtion.Text = Info.weather[0].main;
+                lab_detail.Text = Info.weather[0].description;
+                lab_sunset.Text = convertDateTime(Info.sys.sunset).ToString();
+                lab_sunrise.Text = convertDateTime(Info.sys.sunrise).ToString();
+                lab_windspeed.Text = Info.wind.speed.ToString();
+                lab_pressure.Text = Info.main.pressure.ToString();
+
+            }
+        }
+
+        DateTime convertDateTime(long millisec)
+        {
+            DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            day = day.AddSeconds(millisec).ToLocalTime();
+            return day;
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btn_close_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)

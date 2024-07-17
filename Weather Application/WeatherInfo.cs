@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Weather_Application
+namespace WeatherApp
 {
-    //dua tren json data cua Openweather Api tra ve
     internal class WeatherInfo
     {
-        //get: dinh nghia cach lay gtri cua thuoc tinh do
-        //set: gan gtri cho thuoc tinh
         public class coord
         {
             public double lon { get; set; }
             public double lat { get; set; }
+
         }
         public class weather
         {
@@ -27,6 +25,7 @@ namespace Weather_Application
             public double temp { get; set; }
             public double pressure { get; set; }
             public double humidity { get; set; }
+
         }
         public class wind
         {
@@ -35,7 +34,6 @@ namespace Weather_Application
         public class sys
         {
             public long sunrise { get; set; }
-
             public long sunset { get; set; }
         }
         public class root
@@ -45,6 +43,7 @@ namespace Weather_Application
             public main main { get; set; }
             public wind wind { get; set; }
             public sys sys { get; set; }
+
         }
     }
 }

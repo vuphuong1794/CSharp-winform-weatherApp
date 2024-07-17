@@ -7,3 +7,7 @@ E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather
 E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
 E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.exe
 E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.pdb
+E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Newtonsoft.Json.dll
+E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Newtonsoft.Json.xml
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\WeatherApp.Form1.resources
+E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
