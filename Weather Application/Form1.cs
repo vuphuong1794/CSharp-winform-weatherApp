@@ -37,7 +37,9 @@ namespace WeatherApp
             {
                 DateTime convertDateTime(long millisec)
                 {
-                   
+                    DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+                    day = day.AddSeconds(millisec).ToLocalTime();
+                    return day;
                 }
                 string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", tbCity.Text, APIKey);
                 var json = web.DownloadString(url);
