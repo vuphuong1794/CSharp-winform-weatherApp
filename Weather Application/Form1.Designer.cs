@@ -1,4 +1,5 @@
-﻿namespace Weather_Application
+﻿
+namespace Weather_Application
 {
     partial class Form1
     {

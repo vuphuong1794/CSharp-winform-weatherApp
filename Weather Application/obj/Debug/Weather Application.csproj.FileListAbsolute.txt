@@ -1,0 +1,10 @@
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Form1.resources
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
+D:\laptrinhmang\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
