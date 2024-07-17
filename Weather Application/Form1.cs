@@ -46,9 +46,9 @@ namespace WeatherApp
                 WeatherInfo.root Info = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
                 pic_icon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
                 lab_sunset.Text = convertDateTime(Info.sys.sunset).ToString();
+                lab_sunrise.Text = convertDateTime(Info.sys.sunrise).ToString();
                 lab_condtion.Text = Info.weather[0].main;
                 lab_detail.Text = Info.weather[0].description;
-               
                 lab_windspeed.Text = Info.wind.speed.ToString();
                 lab_pressure.Text = Info.main.pressure.ToString();
 
