@@ -49,6 +49,14 @@ namespace WeatherApp
             }
         }
 
+        DateTime convertDateTime(long millisec)
+        {
+            DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            day = day.AddSeconds(millisec).ToLocalTime();
+            return day;
+        }
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
