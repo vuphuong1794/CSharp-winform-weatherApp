@@ -57,9 +57,9 @@ namespace WeatherApp
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btn_close_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
