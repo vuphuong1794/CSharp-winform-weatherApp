@@ -38,7 +38,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.lab_chitiet = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -78,12 +77,12 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lab_tinhtrang = new System.Windows.Forms.Label();
-            this.lab_nhietdo = new System.Windows.Forms.Label();
             this.lab_giogiat = new System.Windows.Forms.Label();
-            this.lab_kncomua = new System.Windows.Forms.Label();
+            this.lab_luongmua = new System.Windows.Forms.Label();
             this.lab_apsuat = new System.Windows.Forms.Label();
             this.lab_doam = new System.Windows.Forms.Label();
             this.lab_tdgio = new System.Windows.Forms.Label();
+            this.lab_nhietdo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -214,18 +213,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Thời tiết hiện tại";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(178, 181);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 22);
-            this.label5.TabIndex = 20;
-            // 
             // lab_chitiet
             // 
             this.lab_chitiet.AutoSize = true;
@@ -283,12 +270,12 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(423, 243);
+            this.label9.Location = new System.Drawing.Point(424, 243);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 22);
+            this.label9.Size = new System.Drawing.Size(128, 22);
             this.label9.TabIndex = 25;
-            this.label9.Text = "Khả năng có mưa:";
+            this.label9.Text = "Lượng mưa:";
             // 
             // label10
             // 
@@ -659,17 +646,6 @@
             this.lab_tinhtrang.Size = new System.Drawing.Size(0, 24);
             this.lab_tinhtrang.TabIndex = 36;
             // 
-            // lab_nhietdo
-            // 
-            this.lab_nhietdo.AutoSize = true;
-            this.lab_nhietdo.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_nhietdo.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lab_nhietdo.Location = new System.Drawing.Point(198, 167);
-            this.lab_nhietdo.Name = "lab_nhietdo";
-            this.lab_nhietdo.Size = new System.Drawing.Size(0, 45);
-            this.lab_nhietdo.TabIndex = 37;
-            this.lab_nhietdo.Visible = false;
-            // 
             // lab_giogiat
             // 
             this.lab_giogiat.AutoSize = true;
@@ -682,17 +658,17 @@
             this.lab_giogiat.Size = new System.Drawing.Size(0, 22);
             this.lab_giogiat.TabIndex = 42;
             // 
-            // lab_kncomua
+            // lab_luongmua
             // 
-            this.lab_kncomua.AutoSize = true;
-            this.lab_kncomua.BackColor = System.Drawing.Color.Transparent;
-            this.lab_kncomua.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_kncomua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lab_kncomua.Location = new System.Drawing.Point(605, 245);
-            this.lab_kncomua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lab_kncomua.Name = "lab_kncomua";
-            this.lab_kncomua.Size = new System.Drawing.Size(0, 22);
-            this.lab_kncomua.TabIndex = 41;
+            this.lab_luongmua.AutoSize = true;
+            this.lab_luongmua.BackColor = System.Drawing.Color.Transparent;
+            this.lab_luongmua.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_luongmua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lab_luongmua.Location = new System.Drawing.Point(605, 245);
+            this.lab_luongmua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_luongmua.Name = "lab_luongmua";
+            this.lab_luongmua.Size = new System.Drawing.Size(0, 22);
+            this.lab_luongmua.TabIndex = 41;
             // 
             // lab_apsuat
             // 
@@ -730,6 +706,18 @@
             this.lab_tdgio.Size = new System.Drawing.Size(0, 22);
             this.lab_tdgio.TabIndex = 38;
             // 
+            // lab_nhietdo
+            // 
+            this.lab_nhietdo.AutoSize = true;
+            this.lab_nhietdo.BackColor = System.Drawing.Color.Transparent;
+            this.lab_nhietdo.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.lab_nhietdo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lab_nhietdo.Location = new System.Drawing.Point(214, 173);
+            this.lab_nhietdo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_nhietdo.Name = "lab_nhietdo";
+            this.lab_nhietdo.Size = new System.Drawing.Size(0, 32);
+            this.lab_nhietdo.TabIndex = 43;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -737,12 +725,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(791, 512);
+            this.Controls.Add(this.lab_nhietdo);
             this.Controls.Add(this.lab_giogiat);
-            this.Controls.Add(this.lab_kncomua);
+            this.Controls.Add(this.lab_luongmua);
             this.Controls.Add(this.lab_apsuat);
             this.Controls.Add(this.lab_doam);
             this.Controls.Add(this.lab_tdgio);
-            this.Controls.Add(this.lab_nhietdo);
             this.Controls.Add(this.lab_tinhtrang);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label24);
@@ -758,7 +746,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lab_chitiet);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pic_icon);
@@ -804,7 +791,6 @@
         private System.Windows.Forms.PictureBox pic_icon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lab_chitiet;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
@@ -845,11 +831,11 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lab_tinhtrang;
-        private System.Windows.Forms.Label lab_nhietdo;
         private System.Windows.Forms.Label lab_giogiat;
-        private System.Windows.Forms.Label lab_kncomua;
+        private System.Windows.Forms.Label lab_luongmua;
         private System.Windows.Forms.Label lab_apsuat;
         private System.Windows.Forms.Label lab_doam;
         private System.Windows.Forms.Label lab_tdgio;
+        private System.Windows.Forms.Label lab_nhietdo;
     }
 }
