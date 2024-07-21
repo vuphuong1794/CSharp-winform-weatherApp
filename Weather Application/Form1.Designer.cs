@@ -79,11 +79,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lab_tinhtrang = new System.Windows.Forms.Label();
             this.lab_nhietdo = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lab_giogiat = new System.Windows.Forms.Label();
+            this.lab_kncomua = new System.Windows.Forms.Label();
+            this.lab_apsuat = new System.Windows.Forms.Label();
+            this.lab_doam = new System.Windows.Forms.Label();
+            this.lab_tdgio = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -173,7 +173,7 @@
             this.pic_icon.Location = new System.Drawing.Point(29, 155);
             this.pic_icon.Margin = new System.Windows.Forms.Padding(2);
             this.pic_icon.Name = "pic_icon";
-            this.pic_icon.Size = new System.Drawing.Size(134, 138);
+            this.pic_icon.Size = new System.Drawing.Size(135, 135);
             this.pic_icon.TabIndex = 6;
             this.pic_icon.TabStop = false;
             // 
@@ -670,70 +670,65 @@
             this.lab_nhietdo.TabIndex = 37;
             this.lab_nhietdo.Visible = false;
             // 
-            // label8
+            // lab_giogiat
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(605, 274);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 22);
-            this.label8.TabIndex = 42;
-            this.label8.Text = "Gió giật:";
+            this.lab_giogiat.AutoSize = true;
+            this.lab_giogiat.BackColor = System.Drawing.Color.Transparent;
+            this.lab_giogiat.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_giogiat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lab_giogiat.Location = new System.Drawing.Point(605, 274);
+            this.lab_giogiat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_giogiat.Name = "lab_giogiat";
+            this.lab_giogiat.Size = new System.Drawing.Size(0, 22);
+            this.lab_giogiat.TabIndex = 42;
             // 
-            // label11
+            // lab_kncomua
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(605, 245);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(181, 22);
-            this.label11.TabIndex = 41;
-            this.label11.Text = "Khả năng có mưa:";
+            this.lab_kncomua.AutoSize = true;
+            this.lab_kncomua.BackColor = System.Drawing.Color.Transparent;
+            this.lab_kncomua.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_kncomua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lab_kncomua.Location = new System.Drawing.Point(605, 245);
+            this.lab_kncomua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_kncomua.Name = "lab_kncomua";
+            this.lab_kncomua.Size = new System.Drawing.Size(0, 22);
+            this.lab_kncomua.TabIndex = 41;
             // 
-            // label25
+            // lab_apsuat
             // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label25.Location = new System.Drawing.Point(606, 215);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(183, 22);
-            this.label25.TabIndex = 40;
-            this.label25.Text = "Áp suất khí quyển:";
+            this.lab_apsuat.AutoSize = true;
+            this.lab_apsuat.BackColor = System.Drawing.Color.Transparent;
+            this.lab_apsuat.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_apsuat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lab_apsuat.Location = new System.Drawing.Point(606, 215);
+            this.lab_apsuat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_apsuat.Name = "lab_apsuat";
+            this.lab_apsuat.Size = new System.Drawing.Size(0, 22);
+            this.lab_apsuat.TabIndex = 40;
             // 
-            // label26
+            // lab_doam
             // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(606, 185);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(76, 22);
-            this.label26.TabIndex = 39;
-            this.label26.Text = "Độ ẩm:";
+            this.lab_doam.AutoSize = true;
+            this.lab_doam.BackColor = System.Drawing.Color.Transparent;
+            this.lab_doam.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_doam.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lab_doam.Location = new System.Drawing.Point(606, 185);
+            this.lab_doam.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_doam.Name = "lab_doam";
+            this.lab_doam.Size = new System.Drawing.Size(0, 22);
+            this.lab_doam.TabIndex = 39;
             // 
-            // label27
+            // lab_tdgio
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label27.Location = new System.Drawing.Point(604, 155);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(116, 22);
-            this.label27.TabIndex = 38;
-            this.label27.Text = "Tốc độ gió:";
+            this.lab_tdgio.AutoSize = true;
+            this.lab_tdgio.BackColor = System.Drawing.Color.Transparent;
+            this.lab_tdgio.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_tdgio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lab_tdgio.Location = new System.Drawing.Point(604, 155);
+            this.lab_tdgio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_tdgio.Name = "lab_tdgio";
+            this.lab_tdgio.Size = new System.Drawing.Size(0, 22);
+            this.lab_tdgio.TabIndex = 38;
             // 
             // Form1
             // 
@@ -742,11 +737,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(791, 512);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.lab_giogiat);
+            this.Controls.Add(this.lab_kncomua);
+            this.Controls.Add(this.lab_apsuat);
+            this.Controls.Add(this.lab_doam);
+            this.Controls.Add(this.lab_tdgio);
             this.Controls.Add(this.lab_nhietdo);
             this.Controls.Add(this.lab_tinhtrang);
             this.Controls.Add(this.label1);
@@ -770,10 +765,8 @@
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbCity);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -853,10 +846,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lab_tinhtrang;
         private System.Windows.Forms.Label lab_nhietdo;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lab_giogiat;
+        private System.Windows.Forms.Label lab_kncomua;
+        private System.Windows.Forms.Label lab_apsuat;
+        private System.Windows.Forms.Label lab_doam;
+        private System.Windows.Forms.Label lab_tdgio;
     }
 }

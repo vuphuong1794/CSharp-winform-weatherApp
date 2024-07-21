@@ -50,3 +50,4 @@ C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weat
 C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
 C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
 C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
+C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Form2.resources
