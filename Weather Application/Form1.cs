@@ -39,7 +39,7 @@ namespace WeatherApp
 
                     var json = web.DownloadString(url);
 
-                    MessageBox.Show("JSON result: " + json);
+                    //MessageBox.Show("JSON result: " + json);
 
                     WeatherInfo.Root info = JsonConvert.DeserializeObject<WeatherInfo.Root>(json);
 
@@ -51,9 +51,19 @@ namespace WeatherApp
                         // Dịch mô tả thời tiết sang tiếng Việt và hiển thị
                         lab_tinhtrang.Text = WeatherTranslator.TranslateMain(info.Weather[0].Main);
                         lab_chitiet.Text = WeatherTranslator.TranslateDescription(info.Weather[0].Description);
-                        // Hiển thị nhiệt độ
-                        lab_nhietdo.Text = $"{(info.Main.Temp - 273.15).ToString("0.0")} °C";
 
+
+
+                        lab_nhietdo.Visible = true;
+                        lab_luongmua.Visible = true;
+                        lab_tdgio.Visible = true;
+                        lab_doam.Visible = true;
+                        lab_apsuat.Visible = true;
+                        lab_giogiat.Visible = true;
+                        // Chuyển đổi nhiệt độ từ Kelvin sang Celsius và Fahrenheit
+                        double tempCelsius = info.Main.Temp - 273.15;
+                        // Hiển thị nhiệt độ cả bằng độ C 
+                        lab_nhietdo.Text = $"{tempCelsius.ToString("0.0")} °C ";
                         // Hiển thị độ ẩm
                         lab_doam.Text = $"{info.Main.Humidity} %";
 
@@ -144,42 +154,42 @@ namespace WeatherApp
 
             private static readonly Dictionary<string, string> WeatherDetailDescriptions = new Dictionary<string, string>
     {
-        { "light rain", "mưa nhẹ" },
-        { "moderate rain", "mưa vừa" },
-        { "heavy intensity rain", "mưa lớn" },
-        { "very heavy rain", "mưa rất lớn" },
-        { "extreme rain", "mưa cực lớn" },
-        { "freezing rain", "mưa đá" },
-        { "light intensity shower rain", "mưa rào nhẹ" },
-        { "shower rain", "mưa rào" },
-        { "heavy intensity shower rain", "mưa rào lớn" },
-        { "ragged shower rain", "mưa rào không đều" },
-        { "light snow", "tuyết nhẹ" },
-        { "Snow", "tuyết" },
-        { "Heavy snow", "tuyết lớn" },
-        { "Sleet", "mưa tuyết" },
-        { "Light shower sleet", "mưa tuyết nhẹ" },
-        { "Shower sleet", "mưa tuyết" },
-        { "Light rain and snow", "mưa và tuyết nhẹ" },
-        { "Rain and snow", "mưa và tuyết" },
-        { "Light shower snow", "tuyết rơi nhẹ" },
-        { "Shower snow", "tuyết rơi" },
-        { "Heavy shower snow", "tuyết rơi lớn" },
-        { "mist", "sương mù" },
-        { "smoke", "khói" },
-        { "haze", "sương mù" },
-        { "sand/ dust whirls", "bụi cát" },
-        { "fog", "sương mù" },
-        { "sand", "cát" },
-        { "dust", "bụi" },
-        { "volcanic ash", "tro núi lửa" },
-        { "squalls", "gió mạnh" },
-        { "tornado", "lốc xoáy" },
-        { "clear sky", "bầu trời quang đãng" },
-        { "few clouds", "ít mây" },
-        { "scattered clouds", "mây rải rác" },
-        { "broken clouds", "mây đứt đoạn" },
-        { "overcast clouds", "mây bao phủ" }
+        { "light rain", "Mưa nhẹ" },
+{ "moderate rain", "Mưa vừa" },
+{ "heavy intensity rain", "mưa lớn" },
+{ "very heavy rain", "mưa rất lớn" },
+{ "extreme rain", "mưa cực lớn" },
+{ "freezing rain", "mưa đá" },
+{ "light intensity shower rain", "mưa rào nhẹ" },
+{ "shower rain", "mưa rào" },
+{ "heavy intensity shower rain", "mưa rào lớn" },
+{ "ragged shower rain", "mưa rào không đều" },
+{ "light snow", "tuyết nhẹ" },
+{ "Snow", "tuyết" },
+{ "Heavy snow", "tuyết lớn" },
+{ "Sleet", "mưa tuyết" },
+{ "Light shower sleet", "mưa tuyết nhẹ" },
+{ "Shower sleet", "mưa tuyết" },
+{ "Light rain and snow", "mưa và tuyết nhẹ" },
+{ "Rain and snow", "mưa và tuyết" },
+{ "Light shower snow", "tuyết rơi nhẹ" },
+{ "Shower snow", "tuyết rơi" },
+{ "Heavy shower snow", "tuyết rơi lớn" },
+{ "mist", "sương mù" },
+{ "smoke", "khói" },
+{ "haze", "sương mù" },
+{ "sand/ dust whirls", "bụi cát" },
+{ "fog", "sương mù" },
+{ "sand", "cát" },
+{ "dust", "bụi" },
+{ "volcanic ash", "tro núi lửa" },
+{ "squalls", "gió mạnh" },
+{ "tornado", "lốc xoáy" },
+{ "clear sky", "bầu trời quang đãng" },
+{ "few clouds", "ít mây" },
+{ "scattered clouds", "mây rải rác" },
+{ "broken clouds", "mây đứt đoạn" },
+{ "overcast clouds", "mây bao phủ" }
     };
 
             public static string TranslateMain(string main)
@@ -201,5 +211,11 @@ namespace WeatherApp
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }
