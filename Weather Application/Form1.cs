@@ -16,11 +16,22 @@ namespace WeatherApp
 {
     public partial class Form1 : Form
     {
+        private Size originalSize;
+
         public Form1()
         {
             InitializeComponent();
+            originalSize = this.Size; // Lưu kích thước ban đầu của form
+            HideControls();
         }
 
+        
+
+        // Trong tệp Form1.cs
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Đóng form hiện tại
+        }
         string APIKey = "3ad3bbc4ae8ad572fc1b8252553aeb26";
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -52,14 +63,8 @@ namespace WeatherApp
                         lab_tinhtrang.Text = WeatherTranslator.TranslateMain(info.Weather[0].Main);
                         lab_chitiet.Text = WeatherTranslator.TranslateDescription(info.Weather[0].Description);
 
+                        ShowControls();
 
-
-                        lab_nhietdo.Visible = true;
-                        lab_luongmua.Visible = true;
-                        lab_tdgio.Visible = true;
-                        lab_doam.Visible = true;
-                        lab_apsuat.Visible = true;
-                        lab_giogiat.Visible = true;
                         // Chuyển đổi nhiệt độ từ Kelvin sang Celsius và Fahrenheit
                         double tempCelsius = info.Main.Temp - 273.15;
                         // Hiển thị nhiệt độ cả bằng độ C 
@@ -78,6 +83,9 @@ namespace WeatherApp
 
                         // Hiển thị lượng mưa (nếu có)
                         lab_luongmua.Text = $"{info.Rain?.Rain1h?.ToString("0.0") ?? "0.0"} mm";
+
+                        // Mở rộng form
+                        this.Size = originalSize;
                     }
                     else
                     {
@@ -91,10 +99,137 @@ namespace WeatherApp
             }
         }
 
+        private void HideControls()
+        {
+            lab_nhietdo.Visible = false;
+            lab_luongmua.Visible = false;
+            lab_tdgio.Visible = false;
+            lab_doam.Visible = false;
+            lab_apsuat.Visible = false;
+            lab_giogiat.Visible = false;
 
+            lb02.Visible = false;
+            lab_chitiet.Visible = false;
+            lb03.Visible = false;
+            lb04.Visible = false;
+            lb05.Visible = false;
+            lb06.Visible = false;
+            lb07.Visible = false;
+            btn_chitiet02.Visible = false;
+            rank_thu02.Visible = false;
+            lab_nhietdo02.Visible = false;
+            pic02_icon.Visible = false;
+            btn_chitiet04.Visible = false;
+            rank_thu04.Visible = false;
+            pic04_icon.Visible = false;
+            lab_nhietdo4.Visible = false;
+            btn_chitiet03.Visible = false;
+            rank_thu03.Visible = false;
+            pic03_icon.Visible = false;
+            lab_nhietdo03.Visible = false;
+            btn_chitiet06.Visible = false;
+            rank_thu06.Visible = false;
+            pic06_icon.Visible = false;
+            lab_nhietdo06.Visible = false;
+            btn_chitiet05.Visible = false;
+            rank_thu05.Visible = false;
+            lab_nhietdo05.Visible = false;
+            pic05_icon.Visible = false;
 
+            lab_ngay02.Visible = false;
+            lab_tinhtrang.Visible = false;
+            lab_giogiat.Visible = false;
+            lab_luongmua.Visible = false;
+            lab_apsuat.Visible = false;
+            lab_doam.Visible = false;
+            lab_tdgio.Visible = false;
+            lab_nhietdo.Visible = false;
+            lab_chitiet02.Visible = false;
+            lab_chitiet04.Visible = false;
+            lab_chitiet03.Visible = false;
+            lab_chitiet06.Visible = false;
+            lab_chitiet05.Visible = false;
+            pic01_icon.Visible = false;
+            rank_thu01.Visible = false;
+            lab_nhietdo01.Visible = false;
+            btn_chitiet01.Visible = false;
+            lab_chitiet01.Visible = false;
 
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel7.Visible = false;
 
+            pic_icon.Visible = false;
+        }
+
+        private void ShowControls()
+        {
+            lab_nhietdo.Visible = true;
+            lab_luongmua.Visible = true;
+            lab_tdgio.Visible = true;
+            lab_doam.Visible = true;
+            lab_apsuat.Visible = true;
+            lab_giogiat.Visible = true;
+
+            lb02.Visible = true;
+            lab_chitiet.Visible = true;
+            lb03.Visible = true;
+            lb04.Visible = true;
+            lb05.Visible = true;
+            lb06.Visible = true;
+            lb07.Visible = true;
+            btn_chitiet02.Visible = true;
+            rank_thu02.Visible = true;
+            lab_nhietdo02.Visible = true;
+            pic02_icon.Visible = true;
+            btn_chitiet04.Visible = true;
+            rank_thu04.Visible = true;
+            pic04_icon.Visible = true;
+            lab_nhietdo4.Visible = true;
+            btn_chitiet03.Visible = true;
+            rank_thu03.Visible = true;
+            pic03_icon.Visible = true;
+            lab_nhietdo03.Visible = true;
+            btn_chitiet06.Visible = true;
+            rank_thu06.Visible = true;
+            pic06_icon.Visible = true;
+            lab_nhietdo06.Visible = true;
+            btn_chitiet05.Visible = true;
+            rank_thu05.Visible = true;
+            lab_nhietdo05.Visible = true;
+            pic05_icon.Visible = true;
+
+            lab_ngay02.Visible = true;
+            lab_tinhtrang.Visible = true;
+            lab_giogiat.Visible = true;
+            lab_luongmua.Visible = true;
+            lab_apsuat.Visible = true;
+            lab_doam.Visible = true;
+            lab_tdgio.Visible = true;
+            lab_nhietdo.Visible = true;
+            lab_chitiet02.Visible = true;
+            lab_chitiet04.Visible = true;
+            lab_chitiet03.Visible = true;
+            lab_chitiet06.Visible = true;
+            lab_chitiet05.Visible = true;
+            pic01_icon.Visible = true;
+            rank_thu01.Visible = true;
+            lab_nhietdo01.Visible = true;
+            btn_chitiet01.Visible = true;
+            lab_chitiet01.Visible = true;
+
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel4.Visible = true;
+            panel5.Visible = true;
+            panel6.Visible = true;
+            panel7.Visible = true;
+
+            pic_icon.Visible = true;
+        }
 
         private void LoadAndResizeImage(string url)
         {
@@ -130,67 +265,66 @@ namespace WeatherApp
             return resizedImage;
         }
 
-
         public static class WeatherTranslator
         {
             private static readonly Dictionary<string, string> WeatherMainDescriptions = new Dictionary<string, string>
-    {
-        { "Thunderstorm", "Dông bão" },
-        { "Drizzle", "Mưa phùn" },
-        { "Rain", "Mưa" },
-        { "Snow", "Tuyết" },
-        { "Mist", "Sương mù" },
-        { "Smoke", "Khói" },
-        { "Haze", "Sương mù" },
-        { "Dust", "Bụi" },
-        { "Fog", "Sương mù" },
-        { "Sand", "Cát" },
-        { "Ash", "Tro" },
-        { "Squall", "Gió mạnh" },
-        { "Tornado", "Lốc xoáy" },
-        { "Clear", "Trời quang" },
-        { "Clouds", "Mây" }
-    };
+            {
+                { "Thunderstorm", "Dông bão" },
+                { "Drizzle", "Mưa phùn" },
+                { "Rain", "Mưa" },
+                { "Snow", "Tuyết" },
+                { "Mist", "Sương mù" },
+                { "Smoke", "Khói" },
+                { "Haze", "Sương mù" },
+                { "Dust", "Bụi" },
+                { "Fog", "Sương mù" },
+                { "Sand", "Cát" },
+                { "Ash", "Tro" },
+                { "Squall", "Gió mạnh" },
+                { "Tornado", "Lốc xoáy" },
+                { "Clear", "Trời quang" },
+                { "Clouds", "Mây" }
+            };
 
             private static readonly Dictionary<string, string> WeatherDetailDescriptions = new Dictionary<string, string>
-    {
-        { "light rain", "Mưa nhẹ" },
-{ "moderate rain", "Mưa vừa" },
-{ "heavy intensity rain", "mưa lớn" },
-{ "very heavy rain", "mưa rất lớn" },
-{ "extreme rain", "mưa cực lớn" },
-{ "freezing rain", "mưa đá" },
-{ "light intensity shower rain", "mưa rào nhẹ" },
-{ "shower rain", "mưa rào" },
-{ "heavy intensity shower rain", "mưa rào lớn" },
-{ "ragged shower rain", "mưa rào không đều" },
-{ "light snow", "tuyết nhẹ" },
-{ "Snow", "tuyết" },
-{ "Heavy snow", "tuyết lớn" },
-{ "Sleet", "mưa tuyết" },
-{ "Light shower sleet", "mưa tuyết nhẹ" },
-{ "Shower sleet", "mưa tuyết" },
-{ "Light rain and snow", "mưa và tuyết nhẹ" },
-{ "Rain and snow", "mưa và tuyết" },
-{ "Light shower snow", "tuyết rơi nhẹ" },
-{ "Shower snow", "tuyết rơi" },
-{ "Heavy shower snow", "tuyết rơi lớn" },
-{ "mist", "sương mù" },
-{ "smoke", "khói" },
-{ "haze", "sương mù" },
-{ "sand/ dust whirls", "bụi cát" },
-{ "fog", "sương mù" },
-{ "sand", "cát" },
-{ "dust", "bụi" },
-{ "volcanic ash", "tro núi lửa" },
-{ "squalls", "gió mạnh" },
-{ "tornado", "lốc xoáy" },
-{ "clear sky", "bầu trời quang đãng" },
-{ "few clouds", "ít mây" },
-{ "scattered clouds", "mây rải rác" },
-{ "broken clouds", "mây đứt đoạn" },
-{ "overcast clouds", "mây bao phủ" }
-    };
+            {
+                { "light rain", "Mưa nhẹ" },
+                { "moderate rain", "Mưa vừa" },
+                { "heavy intensity rain", "Mưa lớn" },
+                { "very heavy rain", "Mưa rất lớn" },
+                { "extreme rain", "Mưa cực lớn" },
+                { "freezing rain", "Mưa đá" },
+                { "light intensity shower rain", "Mưa rào nhẹ" },
+                { "shower rain", "Mưa rào" },
+                { "heavy intensity shower rain", "Mưa rào lớn" },
+                { "ragged shower rain", "Mưa rào không đều" },
+                { "light snow", "Tuyết nhẹ" },
+                { "Snow", "Tuyết" },
+                { "Heavy snow", "Tuyết lớn" },
+                { "Sleet", "Mưa tuyết" },
+                { "Light shower sleet", "Mưa tuyết nhẹ" },
+                { "Shower sleet", "Mưa tuyết" },
+                { "Light rain and snow", "Mưa và tuyết nhẹ" },
+                { "Rain and snow", "Mưa và tuyết" },
+                { "Light shower snow", "Tuyết rơi nhẹ" },
+                { "Shower snow", "Tuyết rơi" },
+                { "Heavy shower snow", "Tuyết rơi lớn" },
+                { "mist", "Sương mù" },
+                { "smoke", "Khói" },
+                { "haze", "Sương mù" },
+                { "sand/ dust whirls", "Bụi cát" },
+                { "fog", "Sương mù" },
+                { "sand", "Cát" },
+                { "dust", "Bụi" },
+                { "volcanic ash", "Tro núi lửa" },
+                { "squalls", "Gió mạnh" },
+                { "tornado", "Lốc xoáy" },
+                { "clear sky", "Bầu trời quang đãng" },
+                { "few clouds", "Ít mây" },
+                { "scattered clouds", "Mây rải rác" },
+                { "broken clouds", "Mây đứt đoạn" },
+                { "overcast clouds", "Mây bao phủ" }
+            };
 
             public static string TranslateMain(string main)
             {
@@ -213,9 +347,9 @@ namespace WeatherApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            HideControls();
+            this.Size = new Size(791
+                , 170); // Thiết lập kích thước nhỏ ban đầu
         }
-
-      
     }
 }
