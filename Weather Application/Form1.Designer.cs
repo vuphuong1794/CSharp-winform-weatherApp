@@ -3,6 +3,8 @@
     partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
+       
+
 
         /// <summary>
         /// Clean up any resources being used.
@@ -17,7 +19,8 @@
             base.Dispose(disposing);
         }
         #region Windows Form Designer generated code
-            
+        
+
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
@@ -81,6 +84,7 @@
             this.btn_chitiet01 = new System.Windows.Forms.Button();
             this.lab_chitiet01 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lab_thoigian = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_logo)).BeginInit();
@@ -153,9 +157,8 @@
             // btn_search
             // 
             this.btn_search.BackColor = System.Drawing.Color.Gray;
-            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_search.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_search.ForeColor = System.Drawing.Color.AliceBlue;
             this.btn_search.Location = new System.Drawing.Point(577, 64);
             this.btn_search.Margin = new System.Windows.Forms.Padding(2);
             this.btn_search.Name = "btn_search";
@@ -204,7 +207,7 @@
             this.lb02.AutoSize = true;
             this.lb02.BackColor = System.Drawing.Color.Transparent;
             this.lb02.Font = new System.Drawing.Font("Arial", 23F, System.Drawing.FontStyle.Bold);
-            this.lb02.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lb02.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.lb02.Location = new System.Drawing.Point(2, 104);
             this.lb02.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb02.Name = "lb02";
@@ -221,9 +224,8 @@
             this.lab_chitiet.Location = new System.Drawing.Point(63, 273);
             this.lab_chitiet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lab_chitiet.Name = "lab_chitiet";
-            this.lab_chitiet.Size = new System.Drawing.Size(127, 36);
+            this.lab_chitiet.Size = new System.Drawing.Size(0, 36);
             this.lab_chitiet.TabIndex = 21;
-            this.lab_chitiet.Text = "mieu ta";
             // 
             // lb03
             // 
@@ -634,14 +636,12 @@
             // 
             this.lab_ngay01.AutoSize = true;
             this.lab_ngay01.BackColor = System.Drawing.Color.Transparent;
-            this.lab_ngay01.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_ngay01.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lab_ngay01.Location = new System.Drawing.Point(369, 32);
-            this.lab_ngay01.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_ngay01.Font = new System.Drawing.Font("Arial Black", 15F, System.Drawing.FontStyle.Bold);
+            this.lab_ngay01.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(0)))), ((int)(((byte)(77)))));
+            this.lab_ngay01.Location = new System.Drawing.Point(8, 34);
             this.lab_ngay01.Name = "lab_ngay01";
-            this.lab_ngay01.Size = new System.Drawing.Size(96, 22);
-            this.lab_ngay01.TabIndex = 34;
-            this.lab_ngay01.Text = "Ngày/Giờ";
+            this.lab_ngay01.Size = new System.Drawing.Size(0, 28);
+            this.lab_ngay01.TabIndex = 1;
             // 
             // lab_ngay02
             // 
@@ -665,9 +665,8 @@
             this.lab_tinhtrang.Location = new System.Drawing.Point(63, 236);
             this.lab_tinhtrang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lab_tinhtrang.Name = "lab_tinhtrang";
-            this.lab_tinhtrang.Size = new System.Drawing.Size(117, 34);
+            this.lab_tinhtrang.Size = new System.Drawing.Size(0, 34);
             this.lab_tinhtrang.TabIndex = 36;
-            this.lab_tinhtrang.Text = "mieu ta";
             // 
             // lab_giogiat
             // 
@@ -738,9 +737,8 @@
             this.lab_nhietdo.Location = new System.Drawing.Point(197, 167);
             this.lab_nhietdo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lab_nhietdo.Name = "lab_nhietdo";
-            this.lab_nhietdo.Size = new System.Drawing.Size(192, 56);
+            this.lab_nhietdo.Size = new System.Drawing.Size(0, 56);
             this.lab_nhietdo.TabIndex = 43;
-            this.lab_nhietdo.Text = "mieu ta";
             // 
             // pic01_icon
             // 
@@ -810,6 +808,17 @@
             this.panel2.Size = new System.Drawing.Size(123, 169);
             this.panel2.TabIndex = 28;
             // 
+            // lab_thoigian
+            // 
+            this.lab_thoigian.AutoSize = true;
+            this.lab_thoigian.BackColor = System.Drawing.Color.Transparent;
+            this.lab_thoigian.Font = new System.Drawing.Font("Arial Black", 15F, System.Drawing.FontStyle.Bold);
+            this.lab_thoigian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(0)))), ((int)(((byte)(77)))));
+            this.lab_thoigian.Location = new System.Drawing.Point(593, 34);
+            this.lab_thoigian.Name = "lab_thoigian";
+            this.lab_thoigian.Size = new System.Drawing.Size(0, 28);
+            this.lab_thoigian.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -817,6 +826,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(791, 512);
+            this.Controls.Add(this.lab_thoigian);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.lab_nhietdo);
             this.Controls.Add(this.lab_giogiat);
@@ -848,6 +858,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WeatherApp";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).EndInit();
@@ -938,5 +949,6 @@
         private System.Windows.Forms.Button btn_chitiet01;
         private System.Windows.Forms.Label lab_chitiet01;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lab_thoigian;
     }
 }

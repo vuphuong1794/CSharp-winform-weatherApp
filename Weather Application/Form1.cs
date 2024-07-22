@@ -49,9 +49,7 @@ namespace WeatherApp
                     string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", cityName, APIKey);
 
                     var json = web.DownloadString(url);
-
                     //MessageBox.Show("JSON result: " + json);
-
                     WeatherInfo.Root info = JsonConvert.DeserializeObject<WeatherInfo.Root>(json);
 
                     if (info != null && info.Weather != null && info.Weather.Count > 0)
@@ -59,46 +57,35 @@ namespace WeatherApp
                         string iconUrl = "https://openweathermap.org/img/w/" + info.Weather[0].Icon + ".png";
                         LoadAndResizeImage(iconUrl);
 
-                        // Dịch mô tả thời tiết sang tiếng Việt và hiển thị
+                        lab_ngay01.Text = DateTime.Now.ToString("dd MMMM yyyy");
+                        lab_thoigian.Text = DateTime.Now.ToString("dddd HH:mm:ss");
+
                         lab_tinhtrang.Text = WeatherTranslator.TranslateMain(info.Weather[0].Main);
                         lab_chitiet.Text = WeatherTranslator.TranslateDescription(info.Weather[0].Description);
-
                         ShowControls();
-
-                        // Chuyển đổi nhiệt độ từ Kelvin sang Celsius và Fahrenheit
                         double tempCelsius = info.Main.Temp - 273.15;
-                        // Hiển thị nhiệt độ cả bằng độ C 
                         lab_nhietdo.Text = $"{tempCelsius.ToString("0.0")} °C ";
-                        // Hiển thị độ ẩm
                         lab_doam.Text = $"{info.Main.Humidity} %";
-
-                        // Hiển thị áp suất
                         lab_apsuat.Text = $"{info.Main.Pressure} hPa";
-
-                        // Hiển thị gió giật
                         lab_giogiat.Text = $"{info.Wind.Gust?.ToString("0.00") ?? "N/A"} m/s";
-
-                        // Hiển thị tốc độ gió  
                         lab_tdgio.Text = $"{info.Wind.Speed:0.00} m/s";
-
-                        // Hiển thị lượng mưa (nếu có)
                         lab_luongmua.Text = $"{info.Rain?.Rain1h?.ToString("0.0") ?? "0.0"} mm";
-
                         // Mở rộng form
                         this.Size = originalSize;
                     }
                     else
                     {
-                        MessageBox.Show("Weather data is not available or is incomplete.");
+                        MessageBox.Show("Dữ liệu thời tiết không có sẵn hoặc không đầy đủ.");
+
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error retrieving weather data: " + ex.Message);
+                MessageBox.Show("Lỗi khi lấy dữ liệu thời tiết: " + ex.Message);
+
             }
         }
-
         private void HideControls()
         {
             lab_nhietdo.Visible = false;
@@ -348,8 +335,7 @@ namespace WeatherApp
         private void Form1_Load(object sender, EventArgs e)
         {
             HideControls();
-            this.Size = new Size(791
-                , 170); // Thiết lập kích thước nhỏ ban đầu
+            this.Size = new Size(791, 140); // Thiết lập kích thước nhỏ ban đầu
         }
     }
 }
