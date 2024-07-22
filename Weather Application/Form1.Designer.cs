@@ -55,7 +55,7 @@
             this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_close.Location = new System.Drawing.Point(931, 0);
+            this.btn_close.Location = new System.Drawing.Point(1016, 0);
             this.btn_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(35, 34);
@@ -256,7 +256,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(965, 543);
+            this.ClientSize = new System.Drawing.Size(1047, 720);
             this.Controls.Add(this.lab_sunset);
             this.Controls.Add(this.lab_pressure);
             this.Controls.Add(this.label11);
