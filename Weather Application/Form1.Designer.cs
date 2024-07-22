@@ -85,6 +85,7 @@
             this.lab_chitiet01 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lab_thoigian = new System.Windows.Forms.Label();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_logo)).BeginInit();
@@ -109,7 +110,7 @@
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_close.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.Location = new System.Drawing.Point(746, -1);
+            this.btn_close.Location = new System.Drawing.Point(745, 0);
             this.btn_close.Margin = new System.Windows.Forms.Padding(2);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(46, 30);
@@ -182,6 +183,7 @@
             // header
             // 
             this.header.Controls.Add(this.icon_logo);
+            this.header.Controls.Add(this.btn_close);
             this.header.Controls.Add(this.lab_tieude);
             this.header.Location = new System.Drawing.Point(0, -1);
             this.header.Name = "header";
@@ -239,6 +241,7 @@
             this.lb03.Size = new System.Drawing.Size(139, 28);
             this.lb03.TabIndex = 22;
             this.lb03.Text = "Tốc độ gió:";
+            this.lb03.Click += new System.EventHandler(this.lb03_Click);
             // 
             // lb04
             // 
@@ -827,7 +830,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(791, 512);
             this.Controls.Add(this.lab_thoigian);
-            this.Controls.Add(this.btn_close);
             this.Controls.Add(this.lab_nhietdo);
             this.Controls.Add(this.lab_giogiat);
             this.Controls.Add(this.lab_luongmua);
@@ -950,5 +952,6 @@
         private System.Windows.Forms.Label lab_chitiet01;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lab_thoigian;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
