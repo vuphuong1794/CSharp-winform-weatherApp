@@ -59,6 +59,9 @@ namespace WeatherApp
                         string iconUrl = "https://openweathermap.org/img/w/" + info.Weather[0].Icon + ".png";
                         LoadAndResizeImage(iconUrl);
 
+                        lab_ngay01.Text = DateTime.Now.ToString("dd MMMM yyyy");
+                        lab_thoigian.Text = DateTime.Now.ToString("dddd HH:mm:ss");
+
                         // Dịch mô tả thời tiết sang tiếng Việt và hiển thị
                         lab_tinhtrang.Text = WeatherTranslator.TranslateMain(info.Weather[0].Main);
                         lab_chitiet.Text = WeatherTranslator.TranslateDescription(info.Weather[0].Description);
@@ -89,7 +92,7 @@ namespace WeatherApp
                     }
                     else
                     {
-                        MessageBox.Show("Weather data is not available or is incomplete.");
+                        MessageBox.Show("Dữ liệu thời tiết không có sẵn hoặc không đầy đủ.");
                     }
                 }
             }
@@ -352,11 +355,15 @@ namespace WeatherApp
         private void Form1_Load(object sender, EventArgs e)
         {
             HideControls();
-            this.Size = new Size(791
-                , 170); // Thiết lập kích thước nhỏ ban đầu
+            this.Size = new Size(791, 140); // Thiết lập kích thước nhỏ ban đầu
         }
 
         private void tbCity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_chitiet01_Click(object sender, EventArgs e)
         {
 
         }
