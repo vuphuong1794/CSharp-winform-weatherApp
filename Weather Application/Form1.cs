@@ -99,6 +99,7 @@ namespace WeatherApp
             }
         }
 
+        //ẩn data khi chưa có request
         private void HideControls()
         {
             lab_nhietdo.Visible = false;
@@ -165,6 +166,7 @@ namespace WeatherApp
             pic_icon.Visible = false;
         }
 
+        //show data
         private void ShowControls()
         {
             lab_nhietdo.Visible = true;
@@ -267,6 +269,7 @@ namespace WeatherApp
 
         public static class WeatherTranslator
         {
+            //tình hình thời tiết
             private static readonly Dictionary<string, string> WeatherMainDescriptions = new Dictionary<string, string>
             {
                 { "Thunderstorm", "Dông bão" },
@@ -286,6 +289,7 @@ namespace WeatherApp
                 { "Clouds", "Mây" }
             };
 
+            //chi tiết tình hình thời tiết hiện tại 
             private static readonly Dictionary<string, string> WeatherDetailDescriptions = new Dictionary<string, string>
             {
                 { "light rain", "Mưa nhẹ" },
