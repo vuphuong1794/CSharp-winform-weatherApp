@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeatherApp;
 
 namespace AppWeather
 {
@@ -24,9 +25,21 @@ namespace AppWeather
 
         }
 
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
+            /* Tạo một instance mới của Form2
+            Form2 form2 = new Form2();
 
+            // Hiển thị Form2
+            form2.Show();
+
+            // Đóng Form3 hiện tại
+            this.Close();*/
         }
 
         private void label3_Click(object sender, EventArgs e)

@@ -206,6 +206,7 @@
             this.btn_close.TabIndex = 69;
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // lab_tieude
             // 

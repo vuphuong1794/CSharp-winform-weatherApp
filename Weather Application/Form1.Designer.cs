@@ -786,6 +786,7 @@
             this.btn_chitiet01.Tag = "";
             this.btn_chitiet01.Text = "Chi tiết";
             this.btn_chitiet01.UseVisualStyleBackColor = false;
+            this.btn_chitiet01.Click += new System.EventHandler(this.btn_chitiet01_Click_1);
             // 
             // lab_chitiet01
             // 

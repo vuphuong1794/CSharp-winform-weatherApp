@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using System.Net;
 using System.IO;
 using static WeatherApp.WeatherInfo;
+using Weather_Application;
 
 namespace WeatherApp
 {
@@ -371,6 +372,11 @@ namespace WeatherApp
         private void lb03_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_chitiet01_Click_1(object sender, EventArgs e)
+        {
+           
         }
     }
 }
