@@ -1,4 +1,4 @@
-﻿namespace Weather_Application
+﻿namespace WeatherApp
 {
     partial class Form2
     {
@@ -29,431 +29,268 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.temperatureLabel1 = new System.Windows.Forms.Label();
+            this.temperatureL = new System.Windows.Forms.Label();
+            this.weatherIconBox1 = new System.Windows.Forms.PictureBox();
+            this.dateLabel1 = new System.Windows.Forms.Label();
+            this.temperatureLabel2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.weatherIconBox2 = new System.Windows.Forms.PictureBox();
+            this.dateLabel2 = new System.Windows.Forms.Label();
+            this.TemperatureLabel3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.weatherIconBox3 = new System.Windows.Forms.PictureBox();
+            this.dateLabel3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.detalisBtn1 = new System.Windows.Forms.Button();
+            this.detalisBtn2 = new System.Windows.Forms.Button();
+            this.detalisBtn3 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // temperatureLabel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(577, 126);
-            this.panel1.TabIndex = 38;
+            this.temperatureLabel1.AutoSize = true;
+            this.temperatureLabel1.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temperatureLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.temperatureLabel1.Location = new System.Drawing.Point(206, 67);
+            this.temperatureLabel1.Name = "temperatureLabel1";
+            this.temperatureLabel1.Size = new System.Drawing.Size(0, 27);
+            this.temperatureLabel1.TabIndex = 15;
             // 
-            // button1
+            // temperatureL
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(461, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 26);
-            this.button1.TabIndex = 42;
-            this.button1.Tag = "";
-            this.button1.Text = "Chi tiết";
-            this.button1.UseVisualStyleBackColor = false;
+            this.temperatureL.AutoSize = true;
+            this.temperatureL.BackColor = System.Drawing.Color.Transparent;
+            this.temperatureL.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.temperatureL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.temperatureL.Location = new System.Drawing.Point(110, 67);
+            this.temperatureL.Name = "temperatureL";
+            this.temperatureL.Size = new System.Drawing.Size(86, 22);
+            this.temperatureL.TabIndex = 11;
+            this.temperatureL.Text = "Nhiệt độ";
+            this.temperatureL.Click += new System.EventHandler(this.temperatureL_Click);
             // 
-            // label4
+            // weatherIconBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(188, 102);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 22);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Miêu tả";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.weatherIconBox1.BackColor = System.Drawing.Color.Transparent;
+            this.weatherIconBox1.Location = new System.Drawing.Point(31, 57);
+            this.weatherIconBox1.Name = "weatherIconBox1";
+            this.weatherIconBox1.Size = new System.Drawing.Size(50, 50);
+            this.weatherIconBox1.TabIndex = 10;
+            this.weatherIconBox1.TabStop = false;
             // 
-            // label3
+            // dateLabel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(169, 48);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 22);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Ngày/Giờ";
+            this.dateLabel1.AutoSize = true;
+            this.dateLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dateLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dateLabel1.Location = new System.Drawing.Point(12, 16);
+            this.dateLabel1.Name = "dateLabel1";
+            this.dateLabel1.Size = new System.Drawing.Size(96, 22);
+            this.dateLabel1.TabIndex = 9;
+            this.dateLabel1.Text = "Ngày/Giờ";
             // 
-            // pictureBox1
+            // temperatureLabel2
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(31, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(471, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 22);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "Buổi";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 22);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Ngày/Giờ";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Gray;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(473, 216);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 26);
-            this.button2.TabIndex = 48;
-            this.button2.Tag = "";
-            this.button2.Text = "Chi tiết";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(200, 259);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 22);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "Miêu tả";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(181, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 22);
-            this.label6.TabIndex = 46;
-            this.label6.Text = "Ngày/Giờ";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(43, 181);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox2.TabIndex = 45;
-            this.pictureBox2.TabStop = false;
+            this.temperatureLabel2.AutoSize = true;
+            this.temperatureLabel2.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temperatureLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.temperatureLabel2.Location = new System.Drawing.Point(206, 194);
+            this.temperatureLabel2.Name = "temperatureLabel2";
+            this.temperatureLabel2.Size = new System.Drawing.Size(0, 27);
+            this.temperatureLabel2.TabIndex = 24;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(483, 157);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(110, 198);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 22);
-            this.label7.TabIndex = 44;
-            this.label7.Text = "Buổi";
+            this.label7.Size = new System.Drawing.Size(86, 22);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Nhiệt độ";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
+            // weatherIconBox2
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(14, 157);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 22);
-            this.label8.TabIndex = 43;
-            this.label8.Text = "Ngày/Giờ";
+            this.weatherIconBox2.BackColor = System.Drawing.Color.Transparent;
+            this.weatherIconBox2.Location = new System.Drawing.Point(31, 185);
+            this.weatherIconBox2.Name = "weatherIconBox2";
+            this.weatherIconBox2.Size = new System.Drawing.Size(50, 50);
+            this.weatherIconBox2.TabIndex = 19;
+            this.weatherIconBox2.TabStop = false;
             // 
-            // button3
+            // dateLabel2
             // 
-            this.button3.BackColor = System.Drawing.Color.Gray;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(473, 367);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 26);
-            this.button3.TabIndex = 54;
-            this.button3.Tag = "";
-            this.button3.Text = "Chi tiết";
-            this.button3.UseVisualStyleBackColor = false;
+            this.dateLabel2.AutoSize = true;
+            this.dateLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dateLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dateLabel2.Location = new System.Drawing.Point(12, 132);
+            this.dateLabel2.Name = "dateLabel2";
+            this.dateLabel2.Size = new System.Drawing.Size(96, 22);
+            this.dateLabel2.TabIndex = 18;
+            this.dateLabel2.Text = "Ngày/Giờ";
             // 
-            // label9
+            // TemperatureLabel3
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(200, 409);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 22);
-            this.label9.TabIndex = 53;
-            this.label9.Text = "Miêu tả";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(181, 355);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 22);
-            this.label10.TabIndex = 52;
-            this.label10.Text = "Ngày/Giờ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(14, 307);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(96, 22);
-            this.label11.TabIndex = 49;
-            this.label11.Text = "Ngày/Giờ";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(43, 331);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 51;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(483, 307);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 22);
-            this.label12.TabIndex = 50;
-            this.label12.Text = "Buổi";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Gray;
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(473, 522);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 26);
-            this.button4.TabIndex = 60;
-            this.button4.Tag = "";
-            this.button4.Text = "Chi tiết";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(200, 562);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 22);
-            this.label13.TabIndex = 59;
-            this.label13.Text = "Miêu tả";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(181, 508);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 22);
-            this.label14.TabIndex = 58;
-            this.label14.Text = "Ngày/Giờ";
+            this.TemperatureLabel3.AutoSize = true;
+            this.TemperatureLabel3.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TemperatureLabel3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.TemperatureLabel3.Location = new System.Drawing.Point(206, 335);
+            this.TemperatureLabel3.Name = "TemperatureLabel3";
+            this.TemperatureLabel3.Size = new System.Drawing.Size(0, 27);
+            this.TemperatureLabel3.TabIndex = 33;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(14, 460);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(110, 335);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 22);
-            this.label15.TabIndex = 55;
-            this.label15.Text = "Ngày/Giờ";
+            this.label15.Size = new System.Drawing.Size(86, 22);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "Nhiệt độ";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // pictureBox4
+            // weatherIconBox3
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Location = new System.Drawing.Point(43, 484);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox4.TabIndex = 57;
-            this.pictureBox4.TabStop = false;
+            this.weatherIconBox3.BackColor = System.Drawing.Color.Transparent;
+            this.weatherIconBox3.Location = new System.Drawing.Point(31, 323);
+            this.weatherIconBox3.Name = "weatherIconBox3";
+            this.weatherIconBox3.Size = new System.Drawing.Size(50, 50);
+            this.weatherIconBox3.TabIndex = 28;
+            this.weatherIconBox3.TabStop = false;
             // 
-            // label16
+            // dateLabel3
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(483, 460);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(53, 22);
-            this.label16.TabIndex = 56;
-            this.label16.Text = "Buổi";
+            this.dateLabel3.AutoSize = true;
+            this.dateLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dateLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dateLabel3.Location = new System.Drawing.Point(12, 263);
+            this.dateLabel3.Name = "dateLabel3";
+            this.dateLabel3.Size = new System.Drawing.Size(96, 22);
+            this.dateLabel3.TabIndex = 27;
+            this.dateLabel3.Text = "Ngày/Giờ";
             // 
-            // button5
+            // label1
             // 
-            this.button5.BackColor = System.Drawing.Color.Gray;
-            this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(266, 598);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(90, 26);
-            this.button5.TabIndex = 61;
-            this.button5.Tag = "";
-            this.button5.Text = "close";
-            this.button5.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(110, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 27);
+            this.label1.TabIndex = 36;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(169, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // detalisBtn1
+            // 
+            this.detalisBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.detalisBtn1.Location = new System.Drawing.Point(323, 71);
+            this.detalisBtn1.Name = "detalisBtn1";
+            this.detalisBtn1.Size = new System.Drawing.Size(75, 23);
+            this.detalisBtn1.TabIndex = 38;
+            this.detalisBtn1.Text = "Chi tiết";
+            this.detalisBtn1.UseVisualStyleBackColor = true;
+            this.detalisBtn1.Click += new System.EventHandler(this.detalisBtn1_Click);
+            // 
+            // detalisBtn2
+            // 
+            this.detalisBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.detalisBtn2.Location = new System.Drawing.Point(323, 198);
+            this.detalisBtn2.Name = "detalisBtn2";
+            this.detalisBtn2.Size = new System.Drawing.Size(75, 23);
+            this.detalisBtn2.TabIndex = 39;
+            this.detalisBtn2.Text = "Chi tiết";
+            this.detalisBtn2.UseVisualStyleBackColor = true;
+            this.detalisBtn2.Click += new System.EventHandler(this.detalisBtn2_Click);
+            // 
+            // detalisBtn3
+            // 
+            this.detalisBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.detalisBtn3.Location = new System.Drawing.Point(323, 335);
+            this.detalisBtn3.Name = "detalisBtn3";
+            this.detalisBtn3.Size = new System.Drawing.Size(75, 23);
+            this.detalisBtn3.TabIndex = 40;
+            this.detalisBtn3.Text = "Chi tiết";
+            this.detalisBtn3.UseVisualStyleBackColor = true;
+            this.detalisBtn3.Click += new System.EventHandler(this.detalisBtn3_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(575, 625);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
+            this.ClientSize = new System.Drawing.Size(420, 427);
+            this.Controls.Add(this.detalisBtn3);
+            this.Controls.Add(this.detalisBtn2);
+            this.Controls.Add(this.detalisBtn1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TemperatureLabel3);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.weatherIconBox3);
+            this.Controls.Add(this.dateLabel3);
+            this.Controls.Add(this.temperatureLabel2);
             this.Controls.Add(this.label7);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.weatherIconBox2);
+            this.Controls.Add(this.dateLabel2);
+            this.Controls.Add(this.temperatureLabel1);
+            this.Controls.Add(this.temperatureL);
+            this.Controls.Add(this.weatherIconBox1);
+            this.Controls.Add(this.dateLabel1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "Form2";
+            this.Text = "Nhiệt độ";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label temperatureLabel1;
+        private System.Windows.Forms.Label temperatureL;
+        private System.Windows.Forms.PictureBox weatherIconBox1;
+        private System.Windows.Forms.Label dateLabel1;
+        private System.Windows.Forms.Label temperatureLabel2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox weatherIconBox2;
+        private System.Windows.Forms.Label dateLabel2;
+        private System.Windows.Forms.Label TemperatureLabel3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox weatherIconBox3;
+        private System.Windows.Forms.Label dateLabel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button detalisBtn1;
+        private System.Windows.Forms.Button detalisBtn2;
+        private System.Windows.Forms.Button detalisBtn3;
     }
 }
