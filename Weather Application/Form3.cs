@@ -13,7 +13,8 @@ namespace AppWeather
 {
     public partial class Form3 : Form
     {
-        string date, mintemp, maxtemp, pressure, wind, humidity, message, picture;
+        string date, mintemp, maxtemp, pressure, wind, humidity, message, picture, gust, rain;
+        long sunrise, sunset;
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -25,21 +26,29 @@ namespace AppWeather
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_close_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            /* Tạo một instance mới của Form2
-            Form2 form2 = new Form2();
-
-            // Hiển thị Form2
-            form2.Show();
-
-            // Đóng Form3 hiện tại
-            this.Close();*/
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -58,7 +67,8 @@ namespace AppWeather
         }
 
         public Form3(string date, string mintemp, string maxtemp, string pressure, string wind, string humidity
-            , string message, string picture)
+            , string message, string picture, long sunrise, long sunset, string gust, string rain
+            )
         {
             InitializeComponent();
             this.date = date;
@@ -69,6 +79,10 @@ namespace AppWeather
             this.humidity = humidity;
             this.message = message;
             this.picture = picture;
+            this.sunrise = sunrise;
+            this.sunset = sunset;
+            this.gust = gust;
+            this.rain = rain;
 
         }
 
@@ -80,14 +94,18 @@ namespace AppWeather
         private void displayData()
         {
             dateLabel.Text = date;
-            minTemperatureLabel.Text = mintemp + " °C";
-            maxTempLabel.Text = maxtemp + " °C";
-            pressureLabel.Text = pressure + " hPa";
-            WindSpeedLabel.Text = wind + " m/s";
-            humidityLabel.Text = humidity + " %";
+            minnhiet.Text = mintemp + " °C";
+            maxnhiet.Text = maxtemp + " °C";
+            khiquyen.Text = pressure + " hPa";
+            windSpeed.Text = wind + " m/s";
+            doam.Text = humidity + " %";
             descriptionLabel.Text = message.ToUpper();
             string img = "http://openweathermap.org/img/w/" + picture + ".png";
             pic_icon.Load(img);
+            sunrisetext.Text = DateTimeOffset.FromUnixTimeSeconds(sunrise).ToString("yyyy-MM-dd HH:mm");
+            sunsettext.Text = DateTimeOffset.FromUnixTimeSeconds(sunset).ToString("yyyy-MM-dd HH:mm");
+            windGust.Text = gust + " m/s";
+            luongmua.Text = rain + " mm";
         }
     }
 }

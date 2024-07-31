@@ -380,5 +380,10 @@ namespace WeatherApp
             Form2 form2 = new Form2(city);
             form2.Show();
         }
+
+        private void pic_icon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

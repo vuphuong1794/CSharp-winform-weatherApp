@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+          
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -29,12 +30,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.dateLabel = new System.Windows.Forms.Label();
             this.WindSpeedL = new System.Windows.Forms.Label();
             this.pressureL = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,7 +43,6 @@
             this.lab_tieude = new System.Windows.Forms.Label();
             this.icon_logo = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.temperatureL = new System.Windows.Forms.Label();
             this.minTemperatureLabel = new System.Windows.Forms.Label();
             this.pressureLabel = new System.Windows.Forms.Label();
             this.WindSpeedLabel = new System.Windows.Forms.Label();
@@ -52,21 +50,20 @@
             this.humidityLabel = new System.Windows.Forms.Label();
             this.maxTempLabel = new System.Windows.Forms.Label();
             this.pic_icon = new System.Windows.Forms.PictureBox();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.maxnhiet = new System.Windows.Forms.Label();
+            this.luongmua = new System.Windows.Forms.Label();
+            this.doam = new System.Windows.Forms.Label();
+            this.windSpeed = new System.Windows.Forms.Label();
+            this.khiquyen = new System.Windows.Forms.Label();
+            this.windGust = new System.Windows.Forms.Label();
+            this.sunsettext = new System.Windows.Forms.Label();
+            this.sunrisetext = new System.Windows.Forms.Label();
+            this.minnhiet = new System.Windows.Forms.Label();
+            this.tamnhin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.icon_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dateLabel
-            // 
-            this.dateLabel.AutoSize = true;
-            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.dateLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.dateLabel.Location = new System.Drawing.Point(28, 39);
-            this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(85, 24);
-            this.dateLabel.TabIndex = 0;
-            this.dateLabel.Text = "Ngày/giờ";
             // 
             // WindSpeedL
             // 
@@ -74,9 +71,10 @@
             this.WindSpeedL.BackColor = System.Drawing.Color.Transparent;
             this.WindSpeedL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.WindSpeedL.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.WindSpeedL.Location = new System.Drawing.Point(35, 148);
+            this.WindSpeedL.Location = new System.Drawing.Point(47, 182);
+            this.WindSpeedL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WindSpeedL.Name = "WindSpeedL";
-            this.WindSpeedL.Size = new System.Drawing.Size(107, 24);
+            this.WindSpeedL.Size = new System.Drawing.Size(135, 29);
             this.WindSpeedL.TabIndex = 11;
             this.WindSpeedL.Text = "Tốc độ gió:";
             // 
@@ -86,9 +84,10 @@
             this.pressureL.BackColor = System.Drawing.Color.Transparent;
             this.pressureL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.pressureL.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.pressureL.Location = new System.Drawing.Point(35, 114);
+            this.pressureL.Location = new System.Drawing.Point(47, 140);
+            this.pressureL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pressureL.Name = "pressureL";
-            this.pressureL.Size = new System.Drawing.Size(165, 24);
+            this.pressureL.Size = new System.Drawing.Size(206, 29);
             this.pressureL.TabIndex = 10;
             this.pressureL.Text = "Áp suất khí quyển:";
             // 
@@ -98,11 +97,13 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(38, 254);
+            this.label2.Location = new System.Drawing.Point(51, 313);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 24);
+            this.label2.Size = new System.Drawing.Size(206, 29);
             this.label2.TabIndex = 16;
             this.label2.Text = "Nhiệt độ cao nhất:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -110,26 +111,13 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(35, 181);
+            this.label3.Location = new System.Drawing.Point(47, 223);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 24);
+            this.label3.Size = new System.Drawing.Size(89, 29);
             this.label3.TabIndex = 18;
             this.label3.Text = "Độ ẩm:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Gray;
-            this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(287, 371);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 36);
-            this.button5.TabIndex = 62;
-            this.button5.Tag = "";
-            this.button5.Text = "quay lại";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -137,11 +125,13 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(539, 214);
+            this.label1.Location = new System.Drawing.Point(604, 263);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 24);
+            this.label1.Size = new System.Drawing.Size(213, 29);
             this.label1.TabIndex = 63;
-            this.label1.Text = "Nhiệt độ cao nhất:";
+            this.label1.Text = "Nhiệt độ thấp nhất:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -149,11 +139,13 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.Location = new System.Drawing.Point(35, 214);
+            this.label4.Location = new System.Drawing.Point(47, 263);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 24);
+            this.label4.Size = new System.Drawing.Size(138, 29);
             this.label4.TabIndex = 64;
             this.label4.Text = "Lượng mưa:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -161,9 +153,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.Location = new System.Drawing.Point(539, 181);
+            this.label5.Location = new System.Drawing.Point(604, 223);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 24);
+            this.label5.Size = new System.Drawing.Size(101, 29);
             this.label5.TabIndex = 66;
             this.label5.Text = "Sunrise:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -174,9 +167,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(539, 148);
+            this.label6.Location = new System.Drawing.Point(604, 182);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 24);
+            this.label6.Size = new System.Drawing.Size(93, 29);
             this.label6.TabIndex = 67;
             this.label6.Text = "Sunset:";
             // 
@@ -186,9 +180,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label7.Location = new System.Drawing.Point(539, 113);
+            this.label7.Location = new System.Drawing.Point(604, 139);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 24);
+            this.label7.Size = new System.Drawing.Size(102, 29);
             this.label7.TabIndex = 68;
             this.label7.Text = "Gió giật:";
             // 
@@ -199,10 +194,10 @@
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_close.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.Location = new System.Drawing.Point(724, 0);
-            this.btn_close.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_close.Location = new System.Drawing.Point(965, 0);
+            this.btn_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(46, 30);
+            this.btn_close.Size = new System.Drawing.Size(61, 37);
             this.btn_close.TabIndex = 69;
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = false;
@@ -214,10 +209,9 @@
             this.lab_tieude.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lab_tieude.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.lab_tieude.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lab_tieude.Location = new System.Drawing.Point(39, 0);
-            this.lab_tieude.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_tieude.Location = new System.Drawing.Point(52, 0);
             this.lab_tieude.Name = "lab_tieude";
-            this.lab_tieude.Size = new System.Drawing.Size(153, 22);
+            this.lab_tieude.Size = new System.Drawing.Size(194, 29);
             this.lab_tieude.TabIndex = 2;
             this.lab_tieude.Text = "Dự báo thời tiết";
             // 
@@ -228,9 +222,10 @@
             this.icon_logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.icon_logo.Image = ((System.Drawing.Image)(resources.GetObject("icon_logo.Image")));
             this.icon_logo.InitialImage = null;
-            this.icon_logo.Location = new System.Drawing.Point(3, 0);
+            this.icon_logo.Location = new System.Drawing.Point(4, 0);
+            this.icon_logo.Margin = new System.Windows.Forms.Padding(4);
             this.icon_logo.Name = "icon_logo";
-            this.icon_logo.Size = new System.Drawing.Size(31, 22);
+            this.icon_logo.Size = new System.Drawing.Size(41, 27);
             this.icon_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.icon_logo.TabIndex = 70;
             this.icon_logo.TabStop = false;
@@ -241,33 +236,22 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(539, 254);
+            this.label8.Location = new System.Drawing.Point(604, 313);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 24);
+            this.label8.Size = new System.Drawing.Size(119, 29);
             this.label8.TabIndex = 71;
             this.label8.Text = "Tầm nhìn:";
-            // 
-            // temperatureL
-            // 
-            this.temperatureL.AutoSize = true;
-            this.temperatureL.BackColor = System.Drawing.Color.Transparent;
-            this.temperatureL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temperatureL.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.temperatureL.Location = new System.Drawing.Point(444, 160);
-            this.temperatureL.Name = "temperatureL";
-            this.temperatureL.Size = new System.Drawing.Size(40, 24);
-            this.temperatureL.TabIndex = 9;
-            this.temperatureL.Text = "25c";
-            this.temperatureL.Click += new System.EventHandler(this.temperatureL_Click);
             // 
             // minTemperatureLabel
             // 
             this.minTemperatureLabel.AutoSize = true;
             this.minTemperatureLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minTemperatureLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.minTemperatureLabel.Location = new System.Drawing.Point(375, 67);
+            this.minTemperatureLabel.Location = new System.Drawing.Point(500, 82);
+            this.minTemperatureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minTemperatureLabel.Name = "minTemperatureLabel";
-            this.minTemperatureLabel.Size = new System.Drawing.Size(0, 27);
+            this.minTemperatureLabel.Size = new System.Drawing.Size(0, 32);
             this.minTemperatureLabel.TabIndex = 12;
             this.minTemperatureLabel.Click += new System.EventHandler(this.minTemperatureLabel_Click);
             // 
@@ -276,9 +260,10 @@
             this.pressureLabel.AutoSize = true;
             this.pressureLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pressureLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.pressureLabel.Location = new System.Drawing.Point(365, 90);
+            this.pressureLabel.Location = new System.Drawing.Point(487, 111);
+            this.pressureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pressureLabel.Name = "pressureLabel";
-            this.pressureLabel.Size = new System.Drawing.Size(0, 27);
+            this.pressureLabel.Size = new System.Drawing.Size(0, 32);
             this.pressureLabel.TabIndex = 13;
             // 
             // WindSpeedLabel
@@ -286,9 +271,10 @@
             this.WindSpeedLabel.AutoSize = true;
             this.WindSpeedLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WindSpeedLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.WindSpeedLabel.Location = new System.Drawing.Point(365, 124);
+            this.WindSpeedLabel.Location = new System.Drawing.Point(487, 153);
+            this.WindSpeedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WindSpeedLabel.Name = "WindSpeedLabel";
-            this.WindSpeedLabel.Size = new System.Drawing.Size(0, 27);
+            this.WindSpeedLabel.Size = new System.Drawing.Size(0, 32);
             this.WindSpeedLabel.TabIndex = 14;
             // 
             // descriptionLabel
@@ -297,9 +283,10 @@
             this.descriptionLabel.BackColor = System.Drawing.Color.Transparent;
             this.descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.descriptionLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.descriptionLabel.Location = new System.Drawing.Point(316, 284);
+            this.descriptionLabel.Location = new System.Drawing.Point(358, 381);
+            this.descriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(68, 24);
+            this.descriptionLabel.Size = new System.Drawing.Size(90, 29);
             this.descriptionLabel.TabIndex = 15;
             this.descriptionLabel.Text = "thời tiết";
             // 
@@ -308,9 +295,10 @@
             this.humidityLabel.AutoSize = true;
             this.humidityLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidityLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.humidityLabel.Location = new System.Drawing.Point(365, 157);
+            this.humidityLabel.Location = new System.Drawing.Point(487, 193);
+            this.humidityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.humidityLabel.Name = "humidityLabel";
-            this.humidityLabel.Size = new System.Drawing.Size(0, 27);
+            this.humidityLabel.Size = new System.Drawing.Size(0, 32);
             this.humidityLabel.TabIndex = 19;
             // 
             // maxTempLabel
@@ -318,31 +306,186 @@
             this.maxTempLabel.AutoSize = true;
             this.maxTempLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxTempLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.maxTempLabel.Location = new System.Drawing.Point(400, 61);
+            this.maxTempLabel.Location = new System.Drawing.Point(533, 75);
+            this.maxTempLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxTempLabel.Name = "maxTempLabel";
-            this.maxTempLabel.Size = new System.Drawing.Size(0, 27);
+            this.maxTempLabel.Size = new System.Drawing.Size(0, 32);
             this.maxTempLabel.TabIndex = 17;
             // 
             // pic_icon
             // 
             this.pic_icon.BackColor = System.Drawing.Color.Transparent;
             this.pic_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic_icon.Location = new System.Drawing.Point(284, 124);
-            this.pic_icon.Margin = new System.Windows.Forms.Padding(2);
+            this.pic_icon.Location = new System.Drawing.Point(157, 355);
+            this.pic_icon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_icon.Name = "pic_icon";
-            this.pic_icon.Size = new System.Drawing.Size(155, 140);
+            this.pic_icon.Size = new System.Drawing.Size(89, 78);
             this.pic_icon.TabIndex = 72;
             this.pic_icon.TabStop = false;
             this.pic_icon.Click += new System.EventHandler(this.pic_icon_Click);
             // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.dateLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.dateLabel.Location = new System.Drawing.Point(37, 48);
+            this.dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(110, 29);
+            this.dateLabel.TabIndex = 0;
+            this.dateLabel.Text = "Ngày/giờ";
+            // 
+            // maxnhiet
+            // 
+            this.maxnhiet.AutoSize = true;
+            this.maxnhiet.BackColor = System.Drawing.Color.Transparent;
+            this.maxnhiet.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.maxnhiet.ForeColor = System.Drawing.Color.SlateBlue;
+            this.maxnhiet.Location = new System.Drawing.Point(265, 313);
+            this.maxnhiet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxnhiet.Name = "maxnhiet";
+            this.maxnhiet.Size = new System.Drawing.Size(92, 32);
+            this.maxnhiet.TabIndex = 73;
+            this.maxnhiet.Text = "label5";
+            // 
+            // luongmua
+            // 
+            this.luongmua.AutoSize = true;
+            this.luongmua.BackColor = System.Drawing.Color.Transparent;
+            this.luongmua.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.luongmua.ForeColor = System.Drawing.Color.SlateBlue;
+            this.luongmua.Location = new System.Drawing.Point(190, 263);
+            this.luongmua.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.luongmua.Name = "luongmua";
+            this.luongmua.Size = new System.Drawing.Size(92, 32);
+            this.luongmua.TabIndex = 74;
+            this.luongmua.Text = "label5";
+            // 
+            // doam
+            // 
+            this.doam.AutoSize = true;
+            this.doam.BackColor = System.Drawing.Color.Transparent;
+            this.doam.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.doam.ForeColor = System.Drawing.Color.SlateBlue;
+            this.doam.Location = new System.Drawing.Point(154, 221);
+            this.doam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.doam.Name = "doam";
+            this.doam.Size = new System.Drawing.Size(92, 32);
+            this.doam.TabIndex = 75;
+            this.doam.Text = "label5";
+            // 
+            // windSpeed
+            // 
+            this.windSpeed.AutoSize = true;
+            this.windSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.windSpeed.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.windSpeed.ForeColor = System.Drawing.Color.SlateBlue;
+            this.windSpeed.Location = new System.Drawing.Point(190, 180);
+            this.windSpeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windSpeed.Name = "windSpeed";
+            this.windSpeed.Size = new System.Drawing.Size(92, 32);
+            this.windSpeed.TabIndex = 76;
+            this.windSpeed.Text = "label5";
+            // 
+            // khiquyen
+            // 
+            this.khiquyen.AutoSize = true;
+            this.khiquyen.BackColor = System.Drawing.Color.Transparent;
+            this.khiquyen.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.khiquyen.ForeColor = System.Drawing.Color.SlateBlue;
+            this.khiquyen.Location = new System.Drawing.Point(261, 137);
+            this.khiquyen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.khiquyen.Name = "khiquyen";
+            this.khiquyen.Size = new System.Drawing.Size(92, 32);
+            this.khiquyen.TabIndex = 77;
+            this.khiquyen.Text = "label5";
+            // 
+            // windGust
+            // 
+            this.windGust.AutoSize = true;
+            this.windGust.BackColor = System.Drawing.Color.Transparent;
+            this.windGust.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.windGust.ForeColor = System.Drawing.Color.SlateBlue;
+            this.windGust.Location = new System.Drawing.Point(714, 137);
+            this.windGust.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windGust.Name = "windGust";
+            this.windGust.Size = new System.Drawing.Size(92, 32);
+            this.windGust.TabIndex = 78;
+            this.windGust.Text = "label5";
+            // 
+            // sunsettext
+            // 
+            this.sunsettext.AutoSize = true;
+            this.sunsettext.BackColor = System.Drawing.Color.Transparent;
+            this.sunsettext.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.sunsettext.ForeColor = System.Drawing.Color.SlateBlue;
+            this.sunsettext.Location = new System.Drawing.Point(705, 179);
+            this.sunsettext.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sunsettext.Name = "sunsettext";
+            this.sunsettext.Size = new System.Drawing.Size(92, 32);
+            this.sunsettext.TabIndex = 79;
+            this.sunsettext.Text = "label5";
+            this.sunsettext.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // sunrisetext
+            // 
+            this.sunrisetext.AutoSize = true;
+            this.sunrisetext.BackColor = System.Drawing.Color.Transparent;
+            this.sunrisetext.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.sunrisetext.ForeColor = System.Drawing.Color.SlateBlue;
+            this.sunrisetext.Location = new System.Drawing.Point(705, 220);
+            this.sunrisetext.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sunrisetext.Name = "sunrisetext";
+            this.sunrisetext.Size = new System.Drawing.Size(92, 32);
+            this.sunrisetext.TabIndex = 80;
+            this.sunrisetext.Text = "label5";
+            // 
+            // minnhiet
+            // 
+            this.minnhiet.AutoSize = true;
+            this.minnhiet.BackColor = System.Drawing.Color.Transparent;
+            this.minnhiet.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.minnhiet.ForeColor = System.Drawing.Color.SlateBlue;
+            this.minnhiet.Location = new System.Drawing.Point(825, 261);
+            this.minnhiet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minnhiet.Name = "minnhiet";
+            this.minnhiet.Size = new System.Drawing.Size(92, 32);
+            this.minnhiet.TabIndex = 81;
+            this.minnhiet.Text = "label5";
+            // 
+            // tamnhin
+            // 
+            this.tamnhin.AutoSize = true;
+            this.tamnhin.BackColor = System.Drawing.Color.Transparent;
+            this.tamnhin.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.tamnhin.ForeColor = System.Drawing.Color.SlateBlue;
+            this.tamnhin.Location = new System.Drawing.Point(731, 313);
+            this.tamnhin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tamnhin.Name = "tamnhin";
+            this.tamnhin.Size = new System.Drawing.Size(92, 32);
+            this.tamnhin.TabIndex = 82;
+            this.tamnhin.Text = "label5";
+            // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(770, 418);
+            this.ClientSize = new System.Drawing.Size(1027, 514);
+            this.Controls.Add(this.tamnhin);
+            this.Controls.Add(this.minnhiet);
+            this.Controls.Add(this.sunrisetext);
+            this.Controls.Add(this.sunsettext);
+            this.Controls.Add(this.windGust);
+            this.Controls.Add(this.khiquyen);
+            this.Controls.Add(this.windSpeed);
+            this.Controls.Add(this.doam);
+            this.Controls.Add(this.luongmua);
+            this.Controls.Add(this.maxnhiet);
             this.Controls.Add(this.pic_icon);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.icon_logo);
@@ -353,7 +496,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.humidityLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.maxTempLabel);
@@ -364,9 +506,9 @@
             this.Controls.Add(this.minTemperatureLabel);
             this.Controls.Add(this.WindSpeedL);
             this.Controls.Add(this.pressureL);
-            this.Controls.Add(this.temperatureL);
             this.Controls.Add(this.dateLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.Text = "Detail";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -378,13 +520,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Label WindSpeedL;
         private System.Windows.Forms.Label pressureL;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -394,7 +533,6 @@
         private System.Windows.Forms.Label lab_tieude;
         private System.Windows.Forms.PictureBox icon_logo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label temperatureL;
         private System.Windows.Forms.Label minTemperatureLabel;
         private System.Windows.Forms.Label pressureLabel;
         private System.Windows.Forms.Label WindSpeedLabel;
@@ -402,5 +540,16 @@
         private System.Windows.Forms.Label humidityLabel;
         private System.Windows.Forms.Label maxTempLabel;
         private System.Windows.Forms.PictureBox pic_icon;
+        private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Label maxnhiet;
+        private System.Windows.Forms.Label luongmua;
+        private System.Windows.Forms.Label doam;
+        private System.Windows.Forms.Label windSpeed;
+        private System.Windows.Forms.Label khiquyen;
+        private System.Windows.Forms.Label windGust;
+        private System.Windows.Forms.Label sunsettext;
+        private System.Windows.Forms.Label sunrisetext;
+        private System.Windows.Forms.Label minnhiet;
+        private System.Windows.Forms.Label tamnhin;
     }
 }

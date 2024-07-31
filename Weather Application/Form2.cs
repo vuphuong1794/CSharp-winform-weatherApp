@@ -95,6 +95,8 @@ namespace WeatherApp
         {
             if (data != null && data.Weather != null && data.Weather.Count > 0)
             {
+
+            
                 Form3 form = new Form3(
                     DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                     data.Main.TempMin.ToString("F1"),
@@ -103,7 +105,13 @@ namespace WeatherApp
                     data.Wind.Speed.ToString(),
                     data.Main.Humidity.ToString(),
                     data.Weather[0].Description,
-                    data.Weather[0].Icon
+                    data.Weather[0].Icon,
+                    data.Sys.Sunrise,
+                    data.Sys.Sunset,
+                    data.Wind.Gust?.ToString("0.00") ?? "N/A",
+                    data.Rain?.Rain1h?.ToString("0.0") ?? "N/A"
+
+
                 );
                 form.Show();
             }
