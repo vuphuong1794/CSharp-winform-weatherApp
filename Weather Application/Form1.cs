@@ -376,7 +376,9 @@ namespace WeatherApp
 
         private void btn_chitiet01_Click_1(object sender, EventArgs e)
         {
-           
+            string city = tbCity.Text;
+            Form2 form2 = new Form2(city);
+            form2.Show();
         }
     }
 }
