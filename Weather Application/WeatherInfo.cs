@@ -6,30 +6,6 @@ namespace WeatherApp
 {
     internal class WeatherInfo
     {
-        public class Coord
-        {
-            [JsonProperty("lon")]
-            public double Lon { get; set; }
-
-            [JsonProperty("lat")]
-            public double Lat { get; set; }
-        }
-
-        public class Weather
-        {
-            [JsonProperty("id")]
-            public int Id { get; set; }
-
-            [JsonProperty("main")]
-            public string Main { get; set; }
-
-            [JsonProperty("description")]
-            public string Description { get; set; }
-
-            [JsonProperty("icon")]
-            public string Icon { get; set; }
-        }
-
         public class Main
         {
             [JsonProperty("temp")]
@@ -55,6 +31,30 @@ namespace WeatherApp
 
             [JsonProperty("grnd_level")]
             public double GrndLevel { get; set; }
+
+            [JsonProperty("temp_kf")]
+            public double TempKf { get; set; }
+        }
+
+        public class Weather
+        {
+            [JsonProperty("id")]
+            public int Id { get; set; }
+
+            [JsonProperty("main")]
+            public string Main { get; set; }
+
+            [JsonProperty("description")]
+            public string Description { get; set; }
+
+            [JsonProperty("icon")]
+            public string Icon { get; set; }
+        }
+
+        public class Clouds
+        {
+            [JsonProperty("all")]
+            public int All { get; set; }
         }
 
         public class Wind
@@ -78,64 +78,58 @@ namespace WeatherApp
             public double? Rain3h { get; set; }
         }
 
-        public class Clouds
-        {
-            [JsonProperty("all")]
-            public int All { get; set; }
-        }
-
         public class Sys
         {
-            [JsonProperty("country")]
-            public string Country { get; set; }
-
-            [JsonProperty("sunrise")]
-            public long Sunrise { get; set; }
-
-            [JsonProperty("sunset")]
-            public long Sunset { get; set; }
+            [JsonProperty("pod")]
+            public string Pod { get; set; }
         }
 
-        public class Root
+        public class Forecast
         {
-            [JsonProperty("coord")]
-            public Coord Coord { get; set; }
-
-            [JsonProperty("weather")]
-            public List<Weather> Weather { get; set; }
-
-            [JsonProperty("base")]
-            public string Base { get; set; }
+            [JsonProperty("dt")]
+            public long Dt { get; set; }
 
             [JsonProperty("main")]
             public Main Main { get; set; }
 
-            [JsonProperty("wind")]
-            public Wind Wind { get; set; }
-
-            [JsonProperty("rain")]
-            public Rain Rain { get; set; }
+            [JsonProperty("weather")]
+            public List<Weather> Weather { get; set; }
 
             [JsonProperty("clouds")]
             public Clouds Clouds { get; set; }
 
-            [JsonProperty("dt")]
-            public int Dt { get; set; }
+            [JsonProperty("wind")]
+            public Wind Wind { get; set; }
+
+            [JsonProperty("visibility")]
+            public int Visibility { get; set; }
+
+            [JsonProperty("pop")]
+            public double Pop { get; set; }
+
+            [JsonProperty("rain")]
+            public Rain Rain { get; set; }
 
             [JsonProperty("sys")]
             public Sys Sys { get; set; }
 
-            [JsonProperty("timezone")]
-            public int Timezone { get; set; }
+            [JsonProperty("dt_txt")]
+            public string DtTxt { get; set; }
+        }
 
-            [JsonProperty("id")]
-            public int Id { get; set; }
-
-            [JsonProperty("name")]
-            public string Name { get; set; }
-
+        public class Root
+        {
             [JsonProperty("cod")]
-            public int Cod { get; set; }
+            public string Cod { get; set; }
+
+            [JsonProperty("message")]
+            public double Message { get; set; }
+
+            [JsonProperty("cnt")]
+            public int Cnt { get; set; }
+
+            [JsonProperty("list")]
+            public List<Forecast> List { get; set; }
         }
     }
 }

@@ -39,38 +39,7 @@
             this.lb05 = new System.Windows.Forms.Label();
             this.lb06 = new System.Windows.Forms.Label();
             this.lb07 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lab_chitiet02 = new System.Windows.Forms.Label();
-            this.btn_chitiet02 = new System.Windows.Forms.Button();
-            this.rank_thu02 = new System.Windows.Forms.Label();
-            this.lab_nhietdo02 = new System.Windows.Forms.Label();
-            this.pic02_icon = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lab_chitiet04 = new System.Windows.Forms.Label();
-            this.btn_chitiet04 = new System.Windows.Forms.Button();
-            this.rank_thu04 = new System.Windows.Forms.Label();
-            this.pic04_icon = new System.Windows.Forms.PictureBox();
-            this.lab_nhietdo4 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lab_chitiet03 = new System.Windows.Forms.Label();
-            this.btn_chitiet03 = new System.Windows.Forms.Button();
-            this.rank_thu03 = new System.Windows.Forms.Label();
-            this.pic03_icon = new System.Windows.Forms.PictureBox();
-            this.lab_nhietdo03 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lab_chitiet06 = new System.Windows.Forms.Label();
-            this.btn_chitiet06 = new System.Windows.Forms.Button();
-            this.rank_thu06 = new System.Windows.Forms.Label();
-            this.pic06_icon = new System.Windows.Forms.PictureBox();
-            this.lab_nhietdo06 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lab_chitiet05 = new System.Windows.Forms.Label();
-            this.btn_chitiet05 = new System.Windows.Forms.Button();
-            this.rank_thu05 = new System.Windows.Forms.Label();
-            this.lab_nhietdo05 = new System.Windows.Forms.Label();
-            this.pic05_icon = new System.Windows.Forms.PictureBox();
             this.lab_ngay01 = new System.Windows.Forms.Label();
-            this.lab_ngay02 = new System.Windows.Forms.Label();
             this.lab_tinhtrang = new System.Windows.Forms.Label();
             this.lab_giogiat = new System.Windows.Forms.Label();
             this.lab_luongmua = new System.Windows.Forms.Label();
@@ -78,29 +47,12 @@
             this.lab_doam = new System.Windows.Forms.Label();
             this.lab_tdgio = new System.Windows.Forms.Label();
             this.lab_nhietdo = new System.Windows.Forms.Label();
-            this.pic01_icon = new System.Windows.Forms.PictureBox();
-            this.rank_thu01 = new System.Windows.Forms.Label();
-            this.lab_nhietdo01 = new System.Windows.Forms.Label();
-            this.btn_chitiet01 = new System.Windows.Forms.Button();
-            this.lab_chitiet01 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.lab_thoigian = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.btn_chitiet01 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_logo)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic02_icon)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic04_icon)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic03_icon)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic06_icon)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic05_icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic01_icon)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_close
@@ -185,7 +137,7 @@
             this.header.Controls.Add(this.btn_close);
             this.header.Controls.Add(this.lab_tieude);
             this.header.Location = new System.Drawing.Point(0, -1);
-            this.header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.header.Margin = new System.Windows.Forms.Padding(4);
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(1072, 37);
             this.header.TabIndex = 17;
@@ -198,7 +150,7 @@
             this.icon_logo.Image = ((System.Drawing.Image)(resources.GetObject("icon_logo.Image")));
             this.icon_logo.InitialImage = null;
             this.icon_logo.Location = new System.Drawing.Point(0, 0);
-            this.icon_logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.icon_logo.Margin = new System.Windows.Forms.Padding(4);
             this.icon_logo.Name = "icon_logo";
             this.icon_logo.Size = new System.Drawing.Size(53, 36);
             this.icon_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -289,371 +241,6 @@
             this.lb07.TabIndex = 26;
             this.lb07.Text = "Gió giật:";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.lab_chitiet02);
-            this.panel3.Controls.Add(this.btn_chitiet02);
-            this.panel3.Controls.Add(this.rank_thu02);
-            this.panel3.Controls.Add(this.lab_nhietdo02);
-            this.panel3.Controls.Add(this.pic02_icon);
-            this.panel3.Location = new System.Drawing.Point(187, 418);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(164, 208);
-            this.panel3.TabIndex = 29;
-            // 
-            // lab_chitiet02
-            // 
-            this.lab_chitiet02.AutoSize = true;
-            this.lab_chitiet02.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_chitiet02.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lab_chitiet02.Location = new System.Drawing.Point(4, 140);
-            this.lab_chitiet02.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_chitiet02.Name = "lab_chitiet02";
-            this.lab_chitiet02.Size = new System.Drawing.Size(92, 32);
-            this.lab_chitiet02.TabIndex = 5;
-            this.lab_chitiet02.Text = "label8";
-            // 
-            // btn_chitiet02
-            // 
-            this.btn_chitiet02.BackColor = System.Drawing.Color.Gray;
-            this.btn_chitiet02.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_chitiet02.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet02.Location = new System.Drawing.Point(21, 176);
-            this.btn_chitiet02.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_chitiet02.Name = "btn_chitiet02";
-            this.btn_chitiet02.Size = new System.Drawing.Size(120, 32);
-            this.btn_chitiet02.TabIndex = 7;
-            this.btn_chitiet02.Tag = "";
-            this.btn_chitiet02.Text = "Chi tiết";
-            this.btn_chitiet02.UseVisualStyleBackColor = false;
-            // 
-            // rank_thu02
-            // 
-            this.rank_thu02.AutoSize = true;
-            this.rank_thu02.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rank_thu02.Location = new System.Drawing.Point(23, 9);
-            this.rank_thu02.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.rank_thu02.Name = "rank_thu02";
-            this.rank_thu02.Size = new System.Drawing.Size(72, 30);
-            this.rank_thu02.TabIndex = 5;
-            this.rank_thu02.Text = "none";
-            // 
-            // lab_nhietdo02
-            // 
-            this.lab_nhietdo02.AutoSize = true;
-            this.lab_nhietdo02.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_nhietdo02.ForeColor = System.Drawing.Color.Gold;
-            this.lab_nhietdo02.Location = new System.Drawing.Point(24, 107);
-            this.lab_nhietdo02.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_nhietdo02.Name = "lab_nhietdo02";
-            this.lab_nhietdo02.Size = new System.Drawing.Size(107, 32);
-            this.lab_nhietdo02.TabIndex = 6;
-            this.lab_nhietdo02.Text = "label14";
-            // 
-            // pic02_icon
-            // 
-            this.pic02_icon.BackColor = System.Drawing.Color.Transparent;
-            this.pic02_icon.Location = new System.Drawing.Point(21, 33);
-            this.pic02_icon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pic02_icon.Name = "pic02_icon";
-            this.pic02_icon.Size = new System.Drawing.Size(120, 74);
-            this.pic02_icon.TabIndex = 4;
-            this.pic02_icon.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.lab_chitiet04);
-            this.panel4.Controls.Add(this.btn_chitiet04);
-            this.panel4.Controls.Add(this.rank_thu04);
-            this.panel4.Controls.Add(this.pic04_icon);
-            this.panel4.Controls.Add(this.lab_nhietdo4);
-            this.panel4.Location = new System.Drawing.Point(531, 418);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(164, 208);
-            this.panel4.TabIndex = 31;
-            // 
-            // lab_chitiet04
-            // 
-            this.lab_chitiet04.AutoSize = true;
-            this.lab_chitiet04.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_chitiet04.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lab_chitiet04.Location = new System.Drawing.Point(4, 140);
-            this.lab_chitiet04.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_chitiet04.Name = "lab_chitiet04";
-            this.lab_chitiet04.Size = new System.Drawing.Size(107, 32);
-            this.lab_chitiet04.TabIndex = 12;
-            this.lab_chitiet04.Text = "label12";
-            // 
-            // btn_chitiet04
-            // 
-            this.btn_chitiet04.BackColor = System.Drawing.Color.Gray;
-            this.btn_chitiet04.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_chitiet04.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet04.Location = new System.Drawing.Point(23, 176);
-            this.btn_chitiet04.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_chitiet04.Name = "btn_chitiet04";
-            this.btn_chitiet04.Size = new System.Drawing.Size(120, 32);
-            this.btn_chitiet04.TabIndex = 15;
-            this.btn_chitiet04.Tag = "";
-            this.btn_chitiet04.Text = "Chi tiết";
-            this.btn_chitiet04.UseVisualStyleBackColor = false;
-            // 
-            // rank_thu04
-            // 
-            this.rank_thu04.AutoSize = true;
-            this.rank_thu04.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rank_thu04.Location = new System.Drawing.Point(24, 9);
-            this.rank_thu04.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.rank_thu04.Name = "rank_thu04";
-            this.rank_thu04.Size = new System.Drawing.Size(72, 30);
-            this.rank_thu04.TabIndex = 13;
-            this.rank_thu04.Text = "none";
-            // 
-            // pic04_icon
-            // 
-            this.pic04_icon.BackColor = System.Drawing.Color.Transparent;
-            this.pic04_icon.Location = new System.Drawing.Point(23, 33);
-            this.pic04_icon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pic04_icon.Name = "pic04_icon";
-            this.pic04_icon.Size = new System.Drawing.Size(120, 74);
-            this.pic04_icon.TabIndex = 12;
-            this.pic04_icon.TabStop = false;
-            // 
-            // lab_nhietdo4
-            // 
-            this.lab_nhietdo4.AutoSize = true;
-            this.lab_nhietdo4.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_nhietdo4.ForeColor = System.Drawing.Color.Gold;
-            this.lab_nhietdo4.Location = new System.Drawing.Point(25, 107);
-            this.lab_nhietdo4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_nhietdo4.Name = "lab_nhietdo4";
-            this.lab_nhietdo4.Size = new System.Drawing.Size(107, 32);
-            this.lab_nhietdo4.TabIndex = 14;
-            this.lab_nhietdo4.Text = "label19";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.lab_chitiet03);
-            this.panel5.Controls.Add(this.btn_chitiet03);
-            this.panel5.Controls.Add(this.rank_thu03);
-            this.panel5.Controls.Add(this.pic03_icon);
-            this.panel5.Controls.Add(this.lab_nhietdo03);
-            this.panel5.Location = new System.Drawing.Point(359, 418);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(164, 208);
-            this.panel5.TabIndex = 30;
-            // 
-            // lab_chitiet03
-            // 
-            this.lab_chitiet03.AutoSize = true;
-            this.lab_chitiet03.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_chitiet03.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lab_chitiet03.Location = new System.Drawing.Point(4, 140);
-            this.lab_chitiet03.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_chitiet03.Name = "lab_chitiet03";
-            this.lab_chitiet03.Size = new System.Drawing.Size(106, 32);
-            this.lab_chitiet03.TabIndex = 8;
-            this.lab_chitiet03.Text = "label11";
-            // 
-            // btn_chitiet03
-            // 
-            this.btn_chitiet03.BackColor = System.Drawing.Color.Gray;
-            this.btn_chitiet03.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_chitiet03.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet03.Location = new System.Drawing.Point(24, 176);
-            this.btn_chitiet03.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_chitiet03.Name = "btn_chitiet03";
-            this.btn_chitiet03.Size = new System.Drawing.Size(120, 32);
-            this.btn_chitiet03.TabIndex = 11;
-            this.btn_chitiet03.Tag = "";
-            this.btn_chitiet03.Text = "Chi tiết";
-            this.btn_chitiet03.UseVisualStyleBackColor = false;
-            // 
-            // rank_thu03
-            // 
-            this.rank_thu03.AutoSize = true;
-            this.rank_thu03.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rank_thu03.Location = new System.Drawing.Point(25, 9);
-            this.rank_thu03.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.rank_thu03.Name = "rank_thu03";
-            this.rank_thu03.Size = new System.Drawing.Size(72, 30);
-            this.rank_thu03.TabIndex = 9;
-            this.rank_thu03.Text = "none";
-            // 
-            // pic03_icon
-            // 
-            this.pic03_icon.BackColor = System.Drawing.Color.Transparent;
-            this.pic03_icon.Location = new System.Drawing.Point(24, 33);
-            this.pic03_icon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pic03_icon.Name = "pic03_icon";
-            this.pic03_icon.Size = new System.Drawing.Size(120, 74);
-            this.pic03_icon.TabIndex = 8;
-            this.pic03_icon.TabStop = false;
-            // 
-            // lab_nhietdo03
-            // 
-            this.lab_nhietdo03.AutoSize = true;
-            this.lab_nhietdo03.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_nhietdo03.ForeColor = System.Drawing.Color.Gold;
-            this.lab_nhietdo03.Location = new System.Drawing.Point(27, 107);
-            this.lab_nhietdo03.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_nhietdo03.Name = "lab_nhietdo03";
-            this.lab_nhietdo03.Size = new System.Drawing.Size(107, 32);
-            this.lab_nhietdo03.TabIndex = 10;
-            this.lab_nhietdo03.Text = "label17";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.lab_chitiet06);
-            this.panel6.Controls.Add(this.btn_chitiet06);
-            this.panel6.Controls.Add(this.rank_thu06);
-            this.panel6.Controls.Add(this.pic06_icon);
-            this.panel6.Controls.Add(this.lab_nhietdo06);
-            this.panel6.Location = new System.Drawing.Point(875, 418);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(164, 208);
-            this.panel6.TabIndex = 33;
-            // 
-            // lab_chitiet06
-            // 
-            this.lab_chitiet06.AutoSize = true;
-            this.lab_chitiet06.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_chitiet06.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lab_chitiet06.Location = new System.Drawing.Point(5, 140);
-            this.lab_chitiet06.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_chitiet06.Name = "lab_chitiet06";
-            this.lab_chitiet06.Size = new System.Drawing.Size(107, 32);
-            this.lab_chitiet06.TabIndex = 20;
-            this.lab_chitiet06.Text = "label16";
-            // 
-            // btn_chitiet06
-            // 
-            this.btn_chitiet06.BackColor = System.Drawing.Color.Gray;
-            this.btn_chitiet06.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_chitiet06.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet06.Location = new System.Drawing.Point(23, 176);
-            this.btn_chitiet06.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_chitiet06.Name = "btn_chitiet06";
-            this.btn_chitiet06.Size = new System.Drawing.Size(120, 32);
-            this.btn_chitiet06.TabIndex = 23;
-            this.btn_chitiet06.Tag = "";
-            this.btn_chitiet06.Text = "Chi tiết";
-            this.btn_chitiet06.UseVisualStyleBackColor = false;
-            // 
-            // rank_thu06
-            // 
-            this.rank_thu06.AutoSize = true;
-            this.rank_thu06.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rank_thu06.Location = new System.Drawing.Point(24, 9);
-            this.rank_thu06.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.rank_thu06.Name = "rank_thu06";
-            this.rank_thu06.Size = new System.Drawing.Size(72, 30);
-            this.rank_thu06.TabIndex = 21;
-            this.rank_thu06.Text = "none";
-            // 
-            // pic06_icon
-            // 
-            this.pic06_icon.BackColor = System.Drawing.Color.Transparent;
-            this.pic06_icon.Location = new System.Drawing.Point(23, 33);
-            this.pic06_icon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pic06_icon.Name = "pic06_icon";
-            this.pic06_icon.Size = new System.Drawing.Size(120, 74);
-            this.pic06_icon.TabIndex = 20;
-            this.pic06_icon.TabStop = false;
-            // 
-            // lab_nhietdo06
-            // 
-            this.lab_nhietdo06.AutoSize = true;
-            this.lab_nhietdo06.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_nhietdo06.ForeColor = System.Drawing.Color.Gold;
-            this.lab_nhietdo06.Location = new System.Drawing.Point(25, 107);
-            this.lab_nhietdo06.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_nhietdo06.Name = "lab_nhietdo06";
-            this.lab_nhietdo06.Size = new System.Drawing.Size(107, 32);
-            this.lab_nhietdo06.TabIndex = 22;
-            this.lab_nhietdo06.Text = "label23";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.lab_chitiet05);
-            this.panel7.Controls.Add(this.btn_chitiet05);
-            this.panel7.Controls.Add(this.rank_thu05);
-            this.panel7.Controls.Add(this.lab_nhietdo05);
-            this.panel7.Controls.Add(this.pic05_icon);
-            this.panel7.Location = new System.Drawing.Point(703, 418);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(164, 208);
-            this.panel7.TabIndex = 32;
-            // 
-            // lab_chitiet05
-            // 
-            this.lab_chitiet05.AutoSize = true;
-            this.lab_chitiet05.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_chitiet05.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lab_chitiet05.Location = new System.Drawing.Point(4, 140);
-            this.lab_chitiet05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_chitiet05.Name = "lab_chitiet05";
-            this.lab_chitiet05.Size = new System.Drawing.Size(107, 32);
-            this.lab_chitiet05.TabIndex = 16;
-            this.lab_chitiet05.Text = "label15";
-            // 
-            // btn_chitiet05
-            // 
-            this.btn_chitiet05.BackColor = System.Drawing.Color.Gray;
-            this.btn_chitiet05.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_chitiet05.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet05.Location = new System.Drawing.Point(19, 176);
-            this.btn_chitiet05.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_chitiet05.Name = "btn_chitiet05";
-            this.btn_chitiet05.Size = new System.Drawing.Size(120, 32);
-            this.btn_chitiet05.TabIndex = 19;
-            this.btn_chitiet05.Tag = "";
-            this.btn_chitiet05.Text = "Chi tiết";
-            this.btn_chitiet05.UseVisualStyleBackColor = false;
-            // 
-            // rank_thu05
-            // 
-            this.rank_thu05.AutoSize = true;
-            this.rank_thu05.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rank_thu05.Location = new System.Drawing.Point(20, 9);
-            this.rank_thu05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.rank_thu05.Name = "rank_thu05";
-            this.rank_thu05.Size = new System.Drawing.Size(72, 30);
-            this.rank_thu05.TabIndex = 17;
-            this.rank_thu05.Text = "none";
-            // 
-            // lab_nhietdo05
-            // 
-            this.lab_nhietdo05.AutoSize = true;
-            this.lab_nhietdo05.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_nhietdo05.ForeColor = System.Drawing.Color.Gold;
-            this.lab_nhietdo05.Location = new System.Drawing.Point(21, 107);
-            this.lab_nhietdo05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_nhietdo05.Name = "lab_nhietdo05";
-            this.lab_nhietdo05.Size = new System.Drawing.Size(107, 32);
-            this.lab_nhietdo05.TabIndex = 18;
-            this.lab_nhietdo05.Text = "label21";
-            // 
-            // pic05_icon
-            // 
-            this.pic05_icon.BackColor = System.Drawing.Color.Transparent;
-            this.pic05_icon.Location = new System.Drawing.Point(19, 33);
-            this.pic05_icon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pic05_icon.Name = "pic05_icon";
-            this.pic05_icon.Size = new System.Drawing.Size(120, 74);
-            this.pic05_icon.TabIndex = 16;
-            this.pic05_icon.TabStop = false;
-            // 
             // lab_ngay01
             // 
             this.lab_ngay01.AutoSize = true;
@@ -665,18 +252,6 @@
             this.lab_ngay01.Name = "lab_ngay01";
             this.lab_ngay01.Size = new System.Drawing.Size(0, 36);
             this.lab_ngay01.TabIndex = 1;
-            // 
-            // lab_ngay02
-            // 
-            this.lab_ngay02.AutoSize = true;
-            this.lab_ngay02.BackColor = System.Drawing.Color.Transparent;
-            this.lab_ngay02.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_ngay02.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lab_ngay02.Location = new System.Drawing.Point(869, 135);
-            this.lab_ngay02.Name = "lab_ngay02";
-            this.lab_ngay02.Size = new System.Drawing.Size(121, 29);
-            this.lab_ngay02.TabIndex = 35;
-            this.lab_ngay02.Text = "Ngày/Giờ";
             // 
             // lab_tinhtrang
             // 
@@ -755,80 +330,6 @@
             this.lab_nhietdo.Size = new System.Drawing.Size(0, 70);
             this.lab_nhietdo.TabIndex = 43;
             // 
-            // pic01_icon
-            // 
-            this.pic01_icon.BackColor = System.Drawing.Color.Transparent;
-            this.pic01_icon.Location = new System.Drawing.Point(24, 33);
-            this.pic01_icon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pic01_icon.Name = "pic01_icon";
-            this.pic01_icon.Size = new System.Drawing.Size(120, 74);
-            this.pic01_icon.TabIndex = 0;
-            this.pic01_icon.TabStop = false;
-            // 
-            // rank_thu01
-            // 
-            this.rank_thu01.AutoSize = true;
-            this.rank_thu01.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rank_thu01.Location = new System.Drawing.Point(25, 9);
-            this.rank_thu01.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.rank_thu01.Name = "rank_thu01";
-            this.rank_thu01.Size = new System.Drawing.Size(72, 30);
-            this.rank_thu01.TabIndex = 1;
-            this.rank_thu01.Text = "none";
-            // 
-            // lab_nhietdo01
-            // 
-            this.lab_nhietdo01.AutoSize = true;
-            this.lab_nhietdo01.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_nhietdo01.ForeColor = System.Drawing.Color.Gold;
-            this.lab_nhietdo01.Location = new System.Drawing.Point(27, 107);
-            this.lab_nhietdo01.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_nhietdo01.Name = "lab_nhietdo01";
-            this.lab_nhietdo01.Size = new System.Drawing.Size(107, 32);
-            this.lab_nhietdo01.TabIndex = 2;
-            this.lab_nhietdo01.Text = "label13";
-            // 
-            // btn_chitiet01
-            // 
-            this.btn_chitiet01.BackColor = System.Drawing.Color.Gray;
-            this.btn_chitiet01.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_chitiet01.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet01.Location = new System.Drawing.Point(24, 176);
-            this.btn_chitiet01.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_chitiet01.Name = "btn_chitiet01";
-            this.btn_chitiet01.Size = new System.Drawing.Size(120, 32);
-            this.btn_chitiet01.TabIndex = 3;
-            this.btn_chitiet01.Tag = "";
-            this.btn_chitiet01.Text = "Chi tiết";
-            this.btn_chitiet01.UseVisualStyleBackColor = false;
-            this.btn_chitiet01.Click += new System.EventHandler(this.btn_chitiet01_Click_1);
-            // 
-            // lab_chitiet01
-            // 
-            this.lab_chitiet01.AutoSize = true;
-            this.lab_chitiet01.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lab_chitiet01.ForeColor = System.Drawing.Color.SlateBlue;
-            this.lab_chitiet01.Location = new System.Drawing.Point(7, 139);
-            this.lab_chitiet01.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab_chitiet01.Name = "lab_chitiet01";
-            this.lab_chitiet01.Size = new System.Drawing.Size(92, 32);
-            this.lab_chitiet01.TabIndex = 4;
-            this.lab_chitiet01.Text = "label5";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.lab_chitiet01);
-            this.panel2.Controls.Add(this.btn_chitiet01);
-            this.panel2.Controls.Add(this.lab_nhietdo01);
-            this.panel2.Controls.Add(this.rank_thu01);
-            this.panel2.Controls.Add(this.pic01_icon);
-            this.panel2.Location = new System.Drawing.Point(15, 418);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(164, 208);
-            this.panel2.TabIndex = 28;
-            // 
             // lab_thoigian
             // 
             this.lab_thoigian.AutoSize = true;
@@ -841,6 +342,21 @@
             this.lab_thoigian.Size = new System.Drawing.Size(0, 36);
             this.lab_thoigian.TabIndex = 2;
             // 
+            // btn_chitiet01
+            // 
+            this.btn_chitiet01.BackColor = System.Drawing.Color.Gray;
+            this.btn_chitiet01.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_chitiet01.ForeColor = System.Drawing.Color.White;
+            this.btn_chitiet01.Location = new System.Drawing.Point(377, 483);
+            this.btn_chitiet01.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_chitiet01.Name = "btn_chitiet01";
+            this.btn_chitiet01.Size = new System.Drawing.Size(360, 62);
+            this.btn_chitiet01.TabIndex = 3;
+            this.btn_chitiet01.Tag = "";
+            this.btn_chitiet01.Text = "Thông tin thời tiết về 7 ngày tới";
+            this.btn_chitiet01.UseVisualStyleBackColor = false;
+            this.btn_chitiet01.Click += new System.EventHandler(this.btn_chitiet01_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -849,6 +365,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1055, 630);
             this.Controls.Add(this.lab_thoigian);
+            this.Controls.Add(this.btn_chitiet01);
             this.Controls.Add(this.lab_nhietdo);
             this.Controls.Add(this.lab_giogiat);
             this.Controls.Add(this.lab_luongmua);
@@ -856,14 +373,7 @@
             this.Controls.Add(this.lab_doam);
             this.Controls.Add(this.lab_tdgio);
             this.Controls.Add(this.lab_tinhtrang);
-            this.Controls.Add(this.lab_ngay02);
             this.Controls.Add(this.lab_ngay01);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lb07);
             this.Controls.Add(this.lb06);
             this.Controls.Add(this.lb05);
@@ -886,24 +396,6 @@
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_logo)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic02_icon)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic04_icon)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic03_icon)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic06_icon)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic05_icon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic01_icon)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -924,34 +416,8 @@
         private System.Windows.Forms.Label lb05;
         private System.Windows.Forms.Label lb06;
         private System.Windows.Forms.Label lb07;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btn_chitiet02;
-        private System.Windows.Forms.Label rank_thu02;
-        private System.Windows.Forms.Label lab_nhietdo02;
-        private System.Windows.Forms.PictureBox pic02_icon;
-        private System.Windows.Forms.Button btn_chitiet04;
-        private System.Windows.Forms.Label rank_thu04;
-        private System.Windows.Forms.PictureBox pic04_icon;
-        private System.Windows.Forms.Label lab_nhietdo4;
-        private System.Windows.Forms.Button btn_chitiet03;
-        private System.Windows.Forms.Label rank_thu03;
-        private System.Windows.Forms.PictureBox pic03_icon;
-        private System.Windows.Forms.Label lab_nhietdo03;
-        private System.Windows.Forms.Button btn_chitiet06;
-        private System.Windows.Forms.Label rank_thu06;
-        private System.Windows.Forms.PictureBox pic06_icon;
-        private System.Windows.Forms.Label lab_nhietdo06;
-        private System.Windows.Forms.Button btn_chitiet05;
-        private System.Windows.Forms.Label rank_thu05;
-        private System.Windows.Forms.Label lab_nhietdo05;
-        private System.Windows.Forms.PictureBox pic05_icon;
         private System.Windows.Forms.PictureBox icon_logo;
         private System.Windows.Forms.Label lab_ngay01;
-        private System.Windows.Forms.Label lab_ngay02;
         private System.Windows.Forms.Label lab_tinhtrang;
         private System.Windows.Forms.Label lab_giogiat;
         private System.Windows.Forms.Label lab_luongmua;
@@ -959,18 +425,8 @@
         private System.Windows.Forms.Label lab_doam;
         private System.Windows.Forms.Label lab_tdgio;
         private System.Windows.Forms.Label lab_nhietdo;
-        private System.Windows.Forms.Label lab_chitiet02;
-        private System.Windows.Forms.Label lab_chitiet04;
-        private System.Windows.Forms.Label lab_chitiet03;
-        private System.Windows.Forms.Label lab_chitiet06;
-        private System.Windows.Forms.Label lab_chitiet05;
-        private System.Windows.Forms.PictureBox pic01_icon;
-        private System.Windows.Forms.Label rank_thu01;
-        private System.Windows.Forms.Label lab_nhietdo01;
-        private System.Windows.Forms.Button btn_chitiet01;
-        private System.Windows.Forms.Label lab_chitiet01;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lab_thoigian;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button btn_chitiet01;
     }
 }

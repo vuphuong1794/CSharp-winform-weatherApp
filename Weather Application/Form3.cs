@@ -14,7 +14,7 @@ namespace AppWeather
     public partial class Form3 : Form
     {
         string date, mintemp, maxtemp, pressure, wind, humidity, message, picture, gust, rain;
-        long sunrise, sunset;
+        //long sunrise, sunset;
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -67,7 +67,7 @@ namespace AppWeather
         }
 
         public Form3(string date, string mintemp, string maxtemp, string pressure, string wind, string humidity
-            , string message, string picture, long sunrise, long sunset, string gust, string rain
+            , string message, string picture, string gust, string rain
             )
         {
             InitializeComponent();
@@ -79,8 +79,8 @@ namespace AppWeather
             this.humidity = humidity;
             this.message = message;
             this.picture = picture;
-            this.sunrise = sunrise;
-            this.sunset = sunset;
+            //this.sunrise = sunrise;
+            //this.sunset = sunset;
             this.gust = gust;
             this.rain = rain;
 
@@ -102,8 +102,8 @@ namespace AppWeather
             descriptionLabel.Text = message.ToUpper();
             string img = "http://openweathermap.org/img/w/" + picture + ".png";
             pic_icon.Load(img);
-            sunrisetext.Text = DateTimeOffset.FromUnixTimeSeconds(sunrise).ToString("yyyy-MM-dd HH:mm");
-            sunsettext.Text = DateTimeOffset.FromUnixTimeSeconds(sunset).ToString("yyyy-MM-dd HH:mm");
+            //sunrisetext.Text = DateTimeOffset.FromUnixTimeSeconds(sunrise).ToString("yyyy-MM-dd HH:mm");
+            //sunsettext.Text = DateTimeOffset.FromUnixTimeSeconds(sunset).ToString("yyyy-MM-dd HH:mm");
             windGust.Text = gust + " m/s";
             luongmua.Text = rain + " mm";
         }

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppWeather;
 using Newtonsoft.Json;
-using WeatherApp;
 
 namespace WeatherApp
 {
@@ -13,8 +13,8 @@ namespace WeatherApp
     {
         private WeatherInfo.Root data;
         private string cityName;
-        private const string APIKey = "3ad3bbc4ae8ad572fc1b8252553aeb26";
-
+        private const string APIKey = "4359ef1cd11b4c97b0da50cce76d01e7";
+        //4359ef1cd11b4c97b0da50cce76d01e7
         public Form2(string City)
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace WeatherApp
             {
                 using (WebClient web = new WebClient())
                 {
-                    string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric", Uri.EscapeDataString(City), APIKey);
+                    string url = string.Format("https://api.openweathermap.org/data/2.5/forecast?q={0}&units=metric&appid={1}", Uri.EscapeDataString(City), APIKey);
                     var json = await web.DownloadStringTaskAsync(url);
                     data = JsonConvert.DeserializeObject<WeatherInfo.Root>(json);
                 }
@@ -46,27 +46,55 @@ namespace WeatherApp
 
         public void displayWeather()
         {
-            if (data != null && data.Weather != null && data.Weather.Count > 0)
+            if (data != null && data.List != null && data.List.Count > 0)
             {
-                // Hiển thị thông tin thời tiết hiện tại
-                dateLabel1.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                temperatureLabel1.Text = data.Main.Temp.ToString("F1") + " °C";
-                string imgUrl = "http://openweathermap.org/img/w/" + data.Weather[0].Icon + ".png";
-                LoadImage(weatherIconBox1, imgUrl);
+                var weatherList = data.List;
 
-                // Ẩn thông tin cho các khoảng thời gian khác
-                dateLabel2.Visible = false;
-                temperatureLabel2.Visible = false;
-                weatherIconBox2.Visible = false;
-                detalisBtn2.Visible = false;
+                // Lấy dự báo cho 3 ngày tiếp theo
+                var forecasts = weatherList
+                    .GroupBy(x => DateTime.Parse(x.DtTxt).Date)
+                    .Select(g => g.First())
+                    .Skip(1)  // Bỏ qua ngày hôm nay
+                    .Take(3)  // Lấy 3 ngày tiếp theo
+                    .ToList();
 
-                dateLabel3.Visible = false;
-                TemperatureLabel3.Visible = false;
-                weatherIconBox3.Visible = false;
-                detalisBtn3.Visible = false;
+                if (forecasts.Count > 0)
+                {
+                    dateLabel1.Text = DateTime.Parse(forecasts[0].DtTxt).ToString("dd/MM/yyyy");
+                    temperatureLabel1.Text = forecasts[0].Main.Temp.ToString("F1") + " °C";
+                    string imgUrl1 = "http://openweathermap.org/img/w/" + forecasts[0].Weather[0].Icon + ".png";
+                    LoadImage(weatherIconBox1, imgUrl1);
+                }
 
-                // Hiển thị tên thành phố
-                label1.Text = data.Name;
+                if (forecasts.Count > 1)
+                {
+                    dateLabel2.Text = DateTime.Parse(forecasts[1].DtTxt).ToString("dd/MM/yyyy");
+                    temperatureLabel2.Text = forecasts[1].Main.Temp.ToString("F1") + " °C";
+                    string imgUrl2 = "http://openweathermap.org/img/w/" + forecasts[1].Weather[0].Icon + ".png";
+                    LoadImage(weatherIconBox2, imgUrl2);
+                    dateLabel2.Visible = true;
+                    temperatureLabel2.Visible = true;
+                    weatherIconBox2.Visible = true;
+                    detalisBtn2.Visible = true;
+                }
+
+                if (forecasts.Count > 2)
+                {
+                    dateLabel3.Text = DateTime.Parse(forecasts[2].DtTxt).ToString("dd/MM/yyyy");
+                    TemperatureLabel3.Text = forecasts[2].Main.Temp.ToString("F1") + " °C";
+                    string imgUrl3 = "http://openweathermap.org/img/w/" + forecasts[2].Weather[0].Icon + ".png";
+                    LoadImage(weatherIconBox3, imgUrl3);
+                    dateLabel3.Visible = true;
+                    TemperatureLabel3.Visible = true;
+                    weatherIconBox3.Visible = true;
+                    detalisBtn3.Visible = true;
+                }
+
+                /* // Hiển thị tên thành phố (nếu có)
+                 if (data.City != null)
+                 {
+                     label1.Text = data.City.Name;
+                 }*/
             }
             else
             {
@@ -88,35 +116,50 @@ namespace WeatherApp
 
         private void detalisBtn1_Click(object sender, EventArgs e)
         {
-            ShowDetails();
+            ShowDetails(0);
         }
 
-        private void ShowDetails()
+        private void detalisBtn2_Click(object sender, EventArgs e)
         {
-            if (data != null && data.Weather != null && data.Weather.Count > 0)
+            ShowDetails(1);
+        }
+
+        private void detalisBtn3_Click(object sender, EventArgs e)
+        {
+            ShowDetails(2);
+        }
+
+        private void ShowDetails(int index)
+        {
+            if (data != null && data.List != null && data.List.Count > 0)
             {
+                var forecasts = data.List
+                    .GroupBy(x => DateTime.Parse(x.DtTxt).Date)
+                    .Select(g => g.First())
+                    .Skip(1)  // Bỏ qua ngày hôm nay
+                    .Take(3)  // Lấy 3 ngày tiếp theo
+                    .ToList();
 
-            
-                Form3 form = new Form3(
-                    DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
-                    data.Main.TempMin.ToString("F1"),
-                    data.Main.TempMax.ToString("F1"),
-                    data.Main.Pressure.ToString(),
-                    data.Wind.Speed.ToString(),
-                    data.Main.Humidity.ToString(),
-                    data.Weather[0].Description,
-                    data.Weather[0].Icon,
-                    data.Sys.Sunrise,
-                    data.Sys.Sunset,
-                    data.Wind.Gust?.ToString("0.00") ?? "N/A",
-                    data.Rain?.Rain1h?.ToString("0.0") ?? "N/A"
+                if (forecasts.Count > index)
+                {
+                    var weatherDetails = forecasts[index];
 
-
-                );
-                form.Show();
+                    Form3 form = new Form3(
+                        weatherDetails.DtTxt,
+                        weatherDetails.Main.TempMin.ToString("F1"),
+                        weatherDetails.Main.TempMax.ToString("F1"),
+                        weatherDetails.Main.Pressure.ToString(),
+                        weatherDetails.Wind.Speed.ToString(),
+                        weatherDetails.Main.Humidity.ToString(),
+                        weatherDetails.Weather[0].Description,
+                        weatherDetails.Weather[0].Icon,
+                        weatherDetails.Wind.Gust?.ToString("0.00") ?? "N/A",
+                        weatherDetails.Rain?.Rain3h?.ToString("0.0") ?? "N/A"
+                    );
+                    form.Show();
+                }
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
@@ -132,15 +175,6 @@ namespace WeatherApp
         }
 
         private void label15_Click(object sender, EventArgs e)
-        {
-        }
-
-        // Các phương thức này có thể được xóa hoặc để trống vì chúng không cần thiết cho dự báo một ngày
-        private void detalisBtn2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void detalisBtn3_Click(object sender, EventArgs e)
         {
         }
     }
