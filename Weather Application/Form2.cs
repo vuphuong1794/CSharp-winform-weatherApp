@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
@@ -50,14 +51,17 @@ namespace WeatherApp
             {
                 var weatherList = data.List;
 
-                // Lấy dự báo cho 3 ngày tiếp theo
+                // Lấy dự báo cho 6 ngày tiếp theo
                 var forecasts = weatherList
                     .GroupBy(x => DateTime.Parse(x.DtTxt).Date)
                     .Select(g => g.First())
                     .Skip(1)  // Bỏ qua ngày hôm nay
-                    .Take(3)  // Lấy 3 ngày tiếp theo
+                    .Take(6)  // Lấy 6 ngày tiếp theo
                     .ToList();
-
+                using (StreamWriter writer = new StreamWriter("log.txt", true))
+                {
+                    writer.WriteLine("Number of forecasts: " + forecasts.Count);
+                }
                 if (forecasts.Count > 0)
                 {
                     dateLabel1.Text = DateTime.Parse(forecasts[0].DtTxt).ToString("dd/MM/yyyy");
@@ -88,6 +92,18 @@ namespace WeatherApp
                     TemperatureLabel3.Visible = true;
                     weatherIconBox3.Visible = true;
                     detalisBtn3.Visible = true;
+                }
+
+                if (forecasts.Count > 3)
+                {
+                    dateLabel4.Text = DateTime.Parse(forecasts[3].DtTxt).ToString("dd/MM/yyyy");
+                    temperatureLabel4.Text = forecasts[3].Main.Temp.ToString("F1") + " °C";
+                    string imgUrl3 = "http://openweathermap.org/img/w/" + forecasts[3].Weather[0].Icon + ".png";
+                    LoadImage(weatherIconBox4, imgUrl3);
+                    dateLabel4.Visible = true;
+                    temperatureLabel4.Visible = true;
+                    weatherIconBox4.Visible = true;
+                    detalisBtn4.Visible = true;
                 }
 
                 /* // Hiển thị tên thành phố (nếu có)
@@ -176,6 +192,11 @@ namespace WeatherApp
 
         private void label15_Click(object sender, EventArgs e)
         {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
