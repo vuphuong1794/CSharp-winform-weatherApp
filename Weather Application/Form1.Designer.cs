@@ -123,7 +123,7 @@
             // 
             this.pic_icon.BackColor = System.Drawing.Color.Transparent;
             this.pic_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic_icon.Location = new System.Drawing.Point(109, 198);
+            this.pic_icon.Location = new System.Drawing.Point(65, 206);
             this.pic_icon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_icon.Name = "pic_icon";
             this.pic_icon.Size = new System.Drawing.Size(207, 172);
