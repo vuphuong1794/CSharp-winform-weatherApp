@@ -100,7 +100,18 @@ namespace AppWeather
             windSpeed.Text = wind + " m/s";
             doam.Text = humidity + " %";
             descriptionLabel.Text = message.ToUpper();
+            //string img = "http://openweathermap.org/img/w/" + picture + ".png";
+            //pic_icon.Load(img);
+
             string img = "http://openweathermap.org/img/w/" + picture + ".png";
+
+            // Set the size of the PictureBox (increase size as needed)
+            pic_icon.Size = new System.Drawing.Size(200, 200); // Example size: 100x100 pixels
+
+            // Set the SizeMode to stretch the image to fit the PictureBox
+            pic_icon.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            // Load the image into the PictureBox
             pic_icon.Load(img);
             //sunrisetext.Text = DateTimeOffset.FromUnixTimeSeconds(sunrise).ToString("yyyy-MM-dd HH:mm");
             //sunsettext.Text = DateTimeOffset.FromUnixTimeSeconds(sunset).ToString("yyyy-MM-dd HH:mm");

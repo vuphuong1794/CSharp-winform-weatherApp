@@ -216,10 +216,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(522, 485);
+            this.button1.Location = new System.Drawing.Point(506, 475);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(111, 38);
             this.button1.TabIndex = 37;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
@@ -264,20 +264,21 @@
             // detalisBtn4
             // 
             this.detalisBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.detalisBtn4.Location = new System.Drawing.Point(1005, 81);
+            this.detalisBtn4.Location = new System.Drawing.Point(1005, 89);
             this.detalisBtn4.Margin = new System.Windows.Forms.Padding(4);
             this.detalisBtn4.Name = "detalisBtn4";
             this.detalisBtn4.Size = new System.Drawing.Size(100, 28);
             this.detalisBtn4.TabIndex = 54;
             this.detalisBtn4.Text = "Chi tiết";
             this.detalisBtn4.UseVisualStyleBackColor = true;
+            this.detalisBtn4.Click += new System.EventHandler(this.detalisBtn4_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(721, 5);
+            this.label2.Location = new System.Drawing.Point(721, 13);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 32);
@@ -288,7 +289,7 @@
             this.temperatureLabel4.AutoSize = true;
             this.temperatureLabel4.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.temperatureLabel4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.temperatureLabel4.Location = new System.Drawing.Point(849, 76);
+            this.temperatureLabel4.Location = new System.Drawing.Point(849, 84);
             this.temperatureLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.temperatureLabel4.Name = "temperatureLabel4";
             this.temperatureLabel4.Size = new System.Drawing.Size(0, 32);
@@ -300,7 +301,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(721, 76);
+            this.label11.Location = new System.Drawing.Point(721, 84);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(110, 29);
@@ -310,7 +311,7 @@
             // weatherIconBox4
             // 
             this.weatherIconBox4.BackColor = System.Drawing.Color.Transparent;
-            this.weatherIconBox4.Location = new System.Drawing.Point(615, 64);
+            this.weatherIconBox4.Location = new System.Drawing.Point(615, 72);
             this.weatherIconBox4.Margin = new System.Windows.Forms.Padding(4);
             this.weatherIconBox4.Name = "weatherIconBox4";
             this.weatherIconBox4.Size = new System.Drawing.Size(67, 62);
@@ -323,7 +324,7 @@
             this.dateLabel4.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.dateLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dateLabel4.Location = new System.Drawing.Point(590, 14);
+            this.dateLabel4.Location = new System.Drawing.Point(590, 22);
             this.dateLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateLabel4.Name = "dateLabel4";
             this.dateLabel4.Size = new System.Drawing.Size(121, 29);
