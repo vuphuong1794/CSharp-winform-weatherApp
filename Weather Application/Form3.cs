@@ -14,7 +14,7 @@ namespace AppWeather
         public Form3(string date, List<WeatherInfo.Forecast> hourlyForecasts)
         {
             InitializeComponent();
-            this.Text = $"Weather Details for {date}";
+            this.Text = $"Chi tiết thời tiết cho {date}";
             this.hourlyForecasts = hourlyForecasts;
         }
 
@@ -22,7 +22,7 @@ namespace AppWeather
         {
             if (hourlyForecasts == null || !hourlyForecasts.Any())
             {
-                MessageBox.Show("No hourly forecasts available.");
+                MessageBox.Show("Không có dự báo theo giờ.");
                 return;
             }
 
@@ -60,12 +60,14 @@ namespace AppWeather
 
                 var time = DateTime.Parse(forecast.DtTxt).ToString("HH:mm");
                 var temp = forecast.Main.Temp.ToString("F1") + " °C";
-                var description = forecast.Weather[0].Description;
+                //lab_chitiet.Text = WeatherTranslator.TranslateDescription(forecast.Weather[0].Description);
+                var description = WeatherTranslator.TranslateDescription(forecast.Weather[0].Description);
+
                 var icon = forecast.Weather[0].Icon;
 
                 var timeLabel = new Label
                 {
-                    Text = $"Time: {time}",
+                    Text = $"Thời gian: {time}",
                     AutoSize = true,
                     Font = new Font("Arial", 10, FontStyle.Bold),
                     Margin = new Padding(3)
@@ -73,7 +75,7 @@ namespace AppWeather
 
                 var tempLabel = new Label
                 {
-                    Text = $"Temperature: {temp}",
+                    Text = $"Nhiệt độ: {temp}",
                     AutoSize = true,
                     Font = new Font("Arial", 10),
                     Margin = new Padding(3)
@@ -81,7 +83,7 @@ namespace AppWeather
 
                 var descriptionLabel = new Label
                 {
-                    Text = $"Description: {description}",
+                    Text = $"Mô tả: {description}",
                     AutoSize = true,
                     Font = new Font("Arial", 10),
                     Margin = new Padding(3)
@@ -96,7 +98,7 @@ namespace AppWeather
 
                 var detailsButton = new Button
                 {
-                    Text = "Details",
+                    Text = "Thông số khác",
                     AutoSize = true,
                     Tag = forecast,
                     Font = new Font("Arial", 10),
@@ -128,16 +130,67 @@ namespace AppWeather
         {
             if (sender is Button button && button.Tag is WeatherInfo.Forecast forecast)
             {
-                var details = $"Feels Like: {forecast.Main.FeelsLike} °C\n" +
-                              $"Min Temp: {forecast.Main.TempMin} °C\n" +
-                              $"Max Temp: {forecast.Main.TempMax} °C\n" +
-                              $"Pressure: {forecast.Main.Pressure} hPa\n" +
-                              $"Humidity: {forecast.Main.Humidity}%\n" +
-                              $"Wind Speed: {forecast.Wind.Speed} m/s\n" +
-                              $"Wind Gust: {forecast.Wind.Gust} m/s\n" +
-                              $"Rain: {(forecast.Rain?.Rain3h.HasValue ?? false ? forecast.Rain.Rain3h.Value.ToString() : "0")} mm";
+                var details = $"Cảm giác nhiệt độ: {forecast.Main.FeelsLike} °C\n" +
+                              $"Nhiệt độ tối thiểu: {forecast.Main.TempMin} °C\n" +
+                              $"Nhiệt độ tối đa: {forecast.Main.TempMax} °C\n" +
+                              $"Áp suất: {forecast.Main.Pressure} hPa\n" +
+                              $"Độ ẩm: {forecast.Main.Humidity}%\n" +
+                              $"Tốc độ gió: {forecast.Wind.Speed} m/s\n" +
+                              $"Gió giật: {forecast.Wind.Gust} m/s\n" +
+                              $"Lượng mưa: {(forecast.Rain?.Rain3h.HasValue ?? false ? forecast.Rain.Rain3h.Value.ToString() : "0")} mm";
 
-                MessageBox.Show(details, "Forecast Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(details, "Chi tiết dự báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public static class WeatherTranslator
+        {
+            private static readonly Dictionary<string, string> WeatherDetailDescriptions = new Dictionary<string, string>
+            {
+                { "light rain", "Mưa nhẹ" },
+                { "moderate rain", "Mưa vừa" },
+                { "heavy intensity rain", "Mưa lớn" },
+                { "very heavy rain", "Mưa rất lớn" },
+                { "extreme rain", "Mưa cực lớn" },
+                { "freezing rain", "Mưa đá" },
+                { "light intensity shower rain", "Mưa rào nhẹ" },
+                { "shower rain", "Mưa rào" },
+                { "heavy intensity shower rain", "Mưa rào lớn" },
+                { "ragged shower rain", "Mưa rào không đều" },
+                { "light snow", "Tuyết nhẹ" },
+                { "snow", "Tuyết" },
+                { "heavy snow", "Tuyết lớn" },
+                { "sleet", "Mưa tuyết" },
+                { "light shower sleet", "Mưa tuyết nhẹ" },
+                { "shower sleet", "Mưa tuyết" },
+                { "light rain and snow", "Mưa và tuyết nhẹ" },
+                { "rain and snow", "Mưa và tuyết" },
+                { "light shower snow", "Tuyết rơi nhẹ" },
+                { "shower snow", "Tuyết rơi" },
+                { "heavy shower snow", "Tuyết rơi lớn" },
+                { "mist", "Sương mù" },
+                { "smoke", "Khói" },
+                { "haze", "Sương mù" },
+                { "sand/dust whirls", "Bụi cát" },
+                { "fog", "Sương mù" },
+                { "sand", "Cát" },
+                { "dust", "Bụi" },
+                { "volcanic ash", "Tro núi lửa" },
+                { "squalls", "Gió mạnh" },
+                { "tornado", "Lốc xoáy" },
+                { "clear sky", "Bầu trời quang đãng" },
+                { "few clouds", "Ít mây" },
+                { "scattered clouds", "Mây rải rác" },
+                { "broken clouds", "Mây đứt đoạn" },
+                { "overcast clouds", "Mây bao phủ" }
+            };
+
+            public static string TranslateDescription(string description)
+            {
+                if (WeatherDetailDescriptions.TryGetValue(description, out string translatedDescription))
+                {
+                    return translatedDescription;
+                }
+                return "Không xác định";
             }
         }
     }
