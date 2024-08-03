@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 using WeatherApp;
 
@@ -130,6 +131,8 @@ namespace AppWeather
         {
             if (sender is Button button && button.Tag is WeatherInfo.Forecast forecast)
             {
+                var tg = DateTime.Parse(forecast.DtTxt).ToString("HH:mm");
+                var icon = forecast.Weather[0].Icon;
                 var details = $"Cảm giác nhiệt độ: {forecast.Main.FeelsLike} °C\n" +
                               $"Nhiệt độ tối thiểu: {forecast.Main.TempMin} °C\n" +
                               $"Nhiệt độ tối đa: {forecast.Main.TempMax} °C\n" +
@@ -139,7 +142,11 @@ namespace AppWeather
                               $"Gió giật: {forecast.Wind.Gust} m/s\n" +
                               $"Lượng mưa: {(forecast.Rain?.Rain3h.HasValue ?? false ? forecast.Rain.Rain3h.Value.ToString() : "0")} mm";
 
-                MessageBox.Show(details, "Chi tiết dự báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Form4 form = new Form4(details, forecast.Weather[0].Icon, DateTime.Parse(forecast.DtTxt).ToString("HH:mm"), WeatherTranslator.TranslateDescription(forecast.Weather[0].Description));
+                    form.Show();
+                
+                //MessageBox.Show(details, "Chi tiết dự báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         public static class WeatherTranslator

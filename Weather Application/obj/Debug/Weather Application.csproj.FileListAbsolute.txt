@@ -68,3 +68,4 @@ D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weat
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
+D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form4.resources

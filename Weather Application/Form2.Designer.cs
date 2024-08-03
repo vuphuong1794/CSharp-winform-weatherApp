@@ -93,7 +93,7 @@
             // 
             this.weatherIconBox1.BackColor = System.Drawing.Color.Transparent;
             this.weatherIconBox1.Location = new System.Drawing.Point(34, 135);
-            this.weatherIconBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.weatherIconBox1.Margin = new System.Windows.Forms.Padding(4);
             this.weatherIconBox1.Name = "weatherIconBox1";
             this.weatherIconBox1.Size = new System.Drawing.Size(67, 62);
             this.weatherIconBox1.TabIndex = 10;
@@ -141,7 +141,7 @@
             // 
             this.weatherIconBox2.BackColor = System.Drawing.Color.Transparent;
             this.weatherIconBox2.Location = new System.Drawing.Point(257, 135);
-            this.weatherIconBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.weatherIconBox2.Margin = new System.Windows.Forms.Padding(4);
             this.weatherIconBox2.Name = "weatherIconBox2";
             this.weatherIconBox2.Size = new System.Drawing.Size(67, 62);
             this.weatherIconBox2.TabIndex = 19;
@@ -189,7 +189,7 @@
             // 
             this.weatherIconBox3.BackColor = System.Drawing.Color.Transparent;
             this.weatherIconBox3.Location = new System.Drawing.Point(521, 135);
-            this.weatherIconBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.weatherIconBox3.Margin = new System.Windows.Forms.Padding(4);
             this.weatherIconBox3.Name = "weatherIconBox3";
             this.weatherIconBox3.Size = new System.Drawing.Size(67, 62);
             this.weatherIconBox3.TabIndex = 28;
@@ -210,14 +210,15 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(521, 462);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 51);
             this.button1.TabIndex = 37;
             this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // detalisBtn1
@@ -225,7 +226,7 @@
             this.detalisBtn1.BackColor = System.Drawing.Color.Transparent;
             this.detalisBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detalisBtn1.Location = new System.Drawing.Point(75, 420);
-            this.detalisBtn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.detalisBtn1.Margin = new System.Windows.Forms.Padding(4);
             this.detalisBtn1.Name = "detalisBtn1";
             this.detalisBtn1.Size = new System.Drawing.Size(100, 28);
             this.detalisBtn1.TabIndex = 38;
@@ -238,7 +239,7 @@
             this.detalisBtn2.BackColor = System.Drawing.Color.Transparent;
             this.detalisBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detalisBtn2.Location = new System.Drawing.Point(301, 420);
-            this.detalisBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.detalisBtn2.Margin = new System.Windows.Forms.Padding(4);
             this.detalisBtn2.Name = "detalisBtn2";
             this.detalisBtn2.Size = new System.Drawing.Size(100, 28);
             this.detalisBtn2.TabIndex = 39;
@@ -251,7 +252,7 @@
             this.detalisBtn3.BackColor = System.Drawing.Color.Transparent;
             this.detalisBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detalisBtn3.Location = new System.Drawing.Point(553, 420);
-            this.detalisBtn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.detalisBtn3.Margin = new System.Windows.Forms.Padding(4);
             this.detalisBtn3.Name = "detalisBtn3";
             this.detalisBtn3.Size = new System.Drawing.Size(100, 28);
             this.detalisBtn3.TabIndex = 40;
@@ -264,7 +265,7 @@
             this.detalisBtn5.BackColor = System.Drawing.Color.Transparent;
             this.detalisBtn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detalisBtn5.Location = new System.Drawing.Point(1024, 417);
-            this.detalisBtn5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.detalisBtn5.Margin = new System.Windows.Forms.Padding(4);
             this.detalisBtn5.Name = "detalisBtn5";
             this.detalisBtn5.Size = new System.Drawing.Size(100, 28);
             this.detalisBtn5.TabIndex = 56;
@@ -276,7 +277,7 @@
             this.detalisBtn4.BackColor = System.Drawing.Color.Transparent;
             this.detalisBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detalisBtn4.Location = new System.Drawing.Point(792, 417);
-            this.detalisBtn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.detalisBtn4.Margin = new System.Windows.Forms.Padding(4);
             this.detalisBtn4.Name = "detalisBtn4";
             this.detalisBtn4.Size = new System.Drawing.Size(100, 28);
             this.detalisBtn4.TabIndex = 55;
@@ -323,7 +324,7 @@
             // 
             this.weatherIconBox5.BackColor = System.Drawing.Color.Transparent;
             this.weatherIconBox5.Location = new System.Drawing.Point(981, 135);
-            this.weatherIconBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.weatherIconBox5.Margin = new System.Windows.Forms.Padding(4);
             this.weatherIconBox5.Name = "weatherIconBox5";
             this.weatherIconBox5.Size = new System.Drawing.Size(67, 62);
             this.weatherIconBox5.TabIndex = 51;
@@ -371,7 +372,7 @@
             // 
             this.weatherIconBox4.BackColor = System.Drawing.Color.Transparent;
             this.weatherIconBox4.Location = new System.Drawing.Point(767, 135);
-            this.weatherIconBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.weatherIconBox4.Margin = new System.Windows.Forms.Padding(4);
             this.weatherIconBox4.Name = "weatherIconBox4";
             this.weatherIconBox4.Size = new System.Drawing.Size(67, 62);
             this.weatherIconBox4.TabIndex = 47;
@@ -402,7 +403,7 @@
             this.label1.Location = new System.Drawing.Point(331, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(537, 42);
+            this.label1.Size = new System.Drawing.Size(521, 40);
             this.label1.TabIndex = 57;
             this.label1.Text = "Dự báo thời tiết 5 ngày tiếp theo";
             // 
@@ -443,7 +444,7 @@
             this.Controls.Add(this.weatherIconBox1);
             this.Controls.Add(this.dateLabel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "Nhiệt độ";
             this.Load += new System.EventHandler(this.Form2_Load);
