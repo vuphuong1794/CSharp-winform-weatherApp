@@ -63,12 +63,12 @@
             // 
             this.WindSpeedL.AutoSize = true;
             this.WindSpeedL.BackColor = System.Drawing.Color.Transparent;
-            this.WindSpeedL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.WindSpeedL.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.WindSpeedL.Location = new System.Drawing.Point(604, 211);
-            this.WindSpeedL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.WindSpeedL.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WindSpeedL.ForeColor = System.Drawing.Color.DarkBlue;
+            this.WindSpeedL.Location = new System.Drawing.Point(505, 148);
+            this.WindSpeedL.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.WindSpeedL.Name = "WindSpeedL";
-            this.WindSpeedL.Size = new System.Drawing.Size(135, 29);
+            this.WindSpeedL.Size = new System.Drawing.Size(171, 37);
             this.WindSpeedL.TabIndex = 11;
             this.WindSpeedL.Text = "Tốc độ gió:";
             // 
@@ -76,12 +76,12 @@
             // 
             this.pressureL.AutoSize = true;
             this.pressureL.BackColor = System.Drawing.Color.Transparent;
-            this.pressureL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.pressureL.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.pressureL.Location = new System.Drawing.Point(47, 140);
-            this.pressureL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pressureL.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pressureL.ForeColor = System.Drawing.Color.DarkBlue;
+            this.pressureL.Location = new System.Drawing.Point(505, 277);
+            this.pressureL.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.pressureL.Name = "pressureL";
-            this.pressureL.Size = new System.Drawing.Size(206, 29);
+            this.pressureL.Size = new System.Drawing.Size(281, 37);
             this.pressureL.TabIndex = 10;
             this.pressureL.Text = "Áp suất khí quyển:";
             // 
@@ -89,12 +89,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(47, 302);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label2.Location = new System.Drawing.Point(505, 232);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(206, 29);
+            this.label2.Size = new System.Drawing.Size(277, 37);
             this.label2.TabIndex = 16;
             this.label2.Text = "Nhiệt độ cao nhất:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -103,12 +103,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(47, 193);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label3.Location = new System.Drawing.Point(505, 318);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 29);
+            this.label3.Size = new System.Drawing.Size(117, 37);
             this.label3.TabIndex = 18;
             this.label3.Text = "Độ ẩm:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -117,12 +117,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(604, 263);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(505, 190);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 29);
+            this.label1.Size = new System.Drawing.Size(295, 37);
             this.label1.TabIndex = 63;
             this.label1.Text = "Nhiệt độ thấp nhất:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -131,12 +131,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.Location = new System.Drawing.Point(47, 245);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label4.Location = new System.Drawing.Point(505, 357);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 29);
+            this.label4.Size = new System.Drawing.Size(180, 37);
             this.label4.TabIndex = 64;
             this.label4.Text = "Lượng mưa:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -145,12 +145,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label7.Location = new System.Drawing.Point(604, 139);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label7.Location = new System.Drawing.Point(505, 109);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 29);
+            this.label7.Size = new System.Drawing.Size(136, 37);
             this.label7.TabIndex = 68;
             this.label7.Text = "Gió giật:";
             // 
@@ -202,8 +202,8 @@
             this.minTemperatureLabel.AutoSize = true;
             this.minTemperatureLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minTemperatureLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.minTemperatureLabel.Location = new System.Drawing.Point(500, 82);
-            this.minTemperatureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minTemperatureLabel.Location = new System.Drawing.Point(595, 117);
+            this.minTemperatureLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.minTemperatureLabel.Name = "minTemperatureLabel";
             this.minTemperatureLabel.Size = new System.Drawing.Size(0, 32);
             this.minTemperatureLabel.TabIndex = 12;
@@ -213,9 +213,9 @@
             // 
             this.pressureLabel.AutoSize = true;
             this.pressureLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pressureLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.pressureLabel.Location = new System.Drawing.Point(487, 111);
-            this.pressureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pressureLabel.ForeColor = System.Drawing.Color.DarkBlue;
+            this.pressureLabel.Location = new System.Drawing.Point(535, 121);
+            this.pressureLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.pressureLabel.Name = "pressureLabel";
             this.pressureLabel.Size = new System.Drawing.Size(0, 32);
             this.pressureLabel.TabIndex = 13;
@@ -224,9 +224,9 @@
             // 
             this.WindSpeedLabel.AutoSize = true;
             this.WindSpeedLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WindSpeedLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.WindSpeedLabel.Location = new System.Drawing.Point(487, 153);
-            this.WindSpeedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.WindSpeedLabel.ForeColor = System.Drawing.Color.DarkBlue;
+            this.WindSpeedLabel.Location = new System.Drawing.Point(535, 172);
+            this.WindSpeedLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.WindSpeedLabel.Name = "WindSpeedLabel";
             this.WindSpeedLabel.Size = new System.Drawing.Size(0, 32);
             this.WindSpeedLabel.TabIndex = 14;
@@ -235,12 +235,12 @@
             // 
             this.descriptionLabel.AutoSize = true;
             this.descriptionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.descriptionLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.descriptionLabel.Location = new System.Drawing.Point(616, 357);
-            this.descriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.descriptionLabel.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionLabel.ForeColor = System.Drawing.Color.DarkBlue;
+            this.descriptionLabel.Location = new System.Drawing.Point(47, 438);
+            this.descriptionLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(90, 29);
+            this.descriptionLabel.Size = new System.Drawing.Size(174, 50);
             this.descriptionLabel.TabIndex = 15;
             this.descriptionLabel.Text = "thời tiết";
             // 
@@ -248,9 +248,9 @@
             // 
             this.humidityLabel.AutoSize = true;
             this.humidityLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.humidityLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.humidityLabel.Location = new System.Drawing.Point(487, 193);
-            this.humidityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.humidityLabel.ForeColor = System.Drawing.Color.DarkBlue;
+            this.humidityLabel.Location = new System.Drawing.Point(535, 200);
+            this.humidityLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.humidityLabel.Name = "humidityLabel";
             this.humidityLabel.Size = new System.Drawing.Size(0, 32);
             this.humidityLabel.TabIndex = 19;
@@ -260,8 +260,8 @@
             this.maxTempLabel.AutoSize = true;
             this.maxTempLabel.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxTempLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.maxTempLabel.Location = new System.Drawing.Point(533, 75);
-            this.maxTempLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxTempLabel.Location = new System.Drawing.Point(639, 108);
+            this.maxTempLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.maxTempLabel.Name = "maxTempLabel";
             this.maxTempLabel.Size = new System.Drawing.Size(0, 32);
             this.maxTempLabel.TabIndex = 17;
@@ -270,10 +270,10 @@
             // 
             this.pic_icon.BackColor = System.Drawing.Color.Transparent;
             this.pic_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic_icon.Location = new System.Drawing.Point(422, 344);
-            this.pic_icon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pic_icon.Location = new System.Drawing.Point(56, 132);
+            this.pic_icon.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pic_icon.Name = "pic_icon";
-            this.pic_icon.Size = new System.Drawing.Size(89, 78);
+            this.pic_icon.Size = new System.Drawing.Size(267, 246);
             this.pic_icon.TabIndex = 72;
             this.pic_icon.TabStop = false;
             this.pic_icon.Click += new System.EventHandler(this.pic_icon_Click);
@@ -283,7 +283,7 @@
             this.dateLabel.AutoSize = true;
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.dateLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.dateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dateLabel.Location = new System.Drawing.Point(37, 48);
             this.dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateLabel.Name = "dateLabel";
@@ -296,9 +296,9 @@
             this.maxnhiet.AutoSize = true;
             this.maxnhiet.BackColor = System.Drawing.Color.Transparent;
             this.maxnhiet.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.maxnhiet.ForeColor = System.Drawing.Color.SlateBlue;
-            this.maxnhiet.Location = new System.Drawing.Point(261, 302);
-            this.maxnhiet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxnhiet.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.maxnhiet.Location = new System.Drawing.Point(792, 236);
+            this.maxnhiet.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.maxnhiet.Name = "maxnhiet";
             this.maxnhiet.Size = new System.Drawing.Size(92, 32);
             this.maxnhiet.TabIndex = 73;
@@ -309,9 +309,9 @@
             this.luongmua.AutoSize = true;
             this.luongmua.BackColor = System.Drawing.Color.Transparent;
             this.luongmua.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.luongmua.ForeColor = System.Drawing.Color.SlateBlue;
-            this.luongmua.Location = new System.Drawing.Point(190, 245);
-            this.luongmua.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.luongmua.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.luongmua.Location = new System.Drawing.Point(708, 362);
+            this.luongmua.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.luongmua.Name = "luongmua";
             this.luongmua.Size = new System.Drawing.Size(92, 32);
             this.luongmua.TabIndex = 74;
@@ -322,9 +322,9 @@
             this.doam.AutoSize = true;
             this.doam.BackColor = System.Drawing.Color.Transparent;
             this.doam.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.doam.ForeColor = System.Drawing.Color.SlateBlue;
-            this.doam.Location = new System.Drawing.Point(144, 193);
-            this.doam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.doam.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.doam.Location = new System.Drawing.Point(639, 322);
+            this.doam.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.doam.Name = "doam";
             this.doam.Size = new System.Drawing.Size(92, 32);
             this.doam.TabIndex = 75;
@@ -335,9 +335,9 @@
             this.windSpeed.AutoSize = true;
             this.windSpeed.BackColor = System.Drawing.Color.Transparent;
             this.windSpeed.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.windSpeed.ForeColor = System.Drawing.Color.SlateBlue;
-            this.windSpeed.Location = new System.Drawing.Point(747, 208);
-            this.windSpeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windSpeed.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.windSpeed.Location = new System.Drawing.Point(708, 152);
+            this.windSpeed.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.windSpeed.Name = "windSpeed";
             this.windSpeed.Size = new System.Drawing.Size(92, 32);
             this.windSpeed.TabIndex = 76;
@@ -348,9 +348,9 @@
             this.khiquyen.AutoSize = true;
             this.khiquyen.BackColor = System.Drawing.Color.Transparent;
             this.khiquyen.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.khiquyen.ForeColor = System.Drawing.Color.SlateBlue;
-            this.khiquyen.Location = new System.Drawing.Point(261, 137);
-            this.khiquyen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.khiquyen.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.khiquyen.Location = new System.Drawing.Point(792, 282);
+            this.khiquyen.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.khiquyen.Name = "khiquyen";
             this.khiquyen.Size = new System.Drawing.Size(92, 32);
             this.khiquyen.TabIndex = 77;
@@ -361,9 +361,9 @@
             this.windGust.AutoSize = true;
             this.windGust.BackColor = System.Drawing.Color.Transparent;
             this.windGust.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.windGust.ForeColor = System.Drawing.Color.SlateBlue;
-            this.windGust.Location = new System.Drawing.Point(714, 137);
-            this.windGust.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windGust.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.windGust.Location = new System.Drawing.Point(686, 117);
+            this.windGust.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.windGust.Name = "windGust";
             this.windGust.Size = new System.Drawing.Size(92, 32);
             this.windGust.TabIndex = 78;
@@ -374,9 +374,9 @@
             this.minnhiet.AutoSize = true;
             this.minnhiet.BackColor = System.Drawing.Color.Transparent;
             this.minnhiet.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.minnhiet.ForeColor = System.Drawing.Color.SlateBlue;
-            this.minnhiet.Location = new System.Drawing.Point(825, 261);
-            this.minnhiet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minnhiet.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.minnhiet.Location = new System.Drawing.Point(819, 194);
+            this.minnhiet.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.minnhiet.Name = "minnhiet";
             this.minnhiet.Size = new System.Drawing.Size(92, 32);
             this.minnhiet.TabIndex = 81;
@@ -389,7 +389,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1027, 514);
+            this.ClientSize = new System.Drawing.Size(1026, 566);
             this.Controls.Add(this.minnhiet);
             this.Controls.Add(this.windGust);
             this.Controls.Add(this.khiquyen);
@@ -415,6 +415,7 @@
             this.Controls.Add(this.WindSpeedL);
             this.Controls.Add(this.pressureL);
             this.Controls.Add(this.dateLabel);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";

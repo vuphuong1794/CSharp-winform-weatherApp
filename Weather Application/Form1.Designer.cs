@@ -75,7 +75,7 @@
             // 
             this.tbCity.BackColor = System.Drawing.SystemColors.MenuBar;
             this.tbCity.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCity.Location = new System.Drawing.Point(343, 79);
+            this.tbCity.Location = new System.Drawing.Point(347, 91);
             this.tbCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(425, 36);
@@ -99,7 +99,7 @@
             this.lb01.BackColor = System.Drawing.Color.Transparent;
             this.lb01.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Bold);
             this.lb01.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.lb01.Location = new System.Drawing.Point(101, 79);
+            this.lb01.Location = new System.Drawing.Point(105, 91);
             this.lb01.Name = "lb01";
             this.lb01.Size = new System.Drawing.Size(227, 34);
             this.lb01.TabIndex = 3;
@@ -110,7 +110,7 @@
             this.btn_search.BackColor = System.Drawing.Color.Gray;
             this.btn_search.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btn_search.Location = new System.Drawing.Point(769, 79);
+            this.btn_search.Location = new System.Drawing.Point(773, 91);
             this.btn_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(140, 37);
@@ -123,7 +123,7 @@
             // 
             this.pic_icon.BackColor = System.Drawing.Color.Transparent;
             this.pic_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic_icon.Location = new System.Drawing.Point(72, 146);
+            this.pic_icon.Location = new System.Drawing.Point(65, 206);
             this.pic_icon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_icon.Name = "pic_icon";
             this.pic_icon.Size = new System.Drawing.Size(207, 172);
@@ -163,7 +163,7 @@
             this.lb02.BackColor = System.Drawing.Color.Transparent;
             this.lb02.Font = new System.Drawing.Font("Arial", 23F, System.Drawing.FontStyle.Bold);
             this.lb02.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.lb02.Location = new System.Drawing.Point(3, 128);
+            this.lb02.Location = new System.Drawing.Point(40, 180);
             this.lb02.Name = "lb02";
             this.lb02.Size = new System.Drawing.Size(325, 45);
             this.lb02.TabIndex = 19;
@@ -175,7 +175,7 @@
             this.lab_chitiet.BackColor = System.Drawing.Color.Transparent;
             this.lab_chitiet.Font = new System.Drawing.Font("Arial", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_chitiet.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lab_chitiet.Location = new System.Drawing.Point(84, 336);
+            this.lab_chitiet.Location = new System.Drawing.Point(121, 388);
             this.lab_chitiet.Name = "lab_chitiet";
             this.lab_chitiet.Size = new System.Drawing.Size(0, 46);
             this.lab_chitiet.TabIndex = 21;
@@ -186,7 +186,7 @@
             this.lb03.BackColor = System.Drawing.Color.Transparent;
             this.lb03.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb03.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb03.Location = new System.Drawing.Point(563, 188);
+            this.lb03.Location = new System.Drawing.Point(572, 233);
             this.lb03.Name = "lb03";
             this.lb03.Size = new System.Drawing.Size(174, 34);
             this.lb03.TabIndex = 22;
@@ -199,7 +199,7 @@
             this.lb04.BackColor = System.Drawing.Color.Transparent;
             this.lb04.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb04.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb04.Location = new System.Drawing.Point(565, 225);
+            this.lb04.Location = new System.Drawing.Point(574, 270);
             this.lb04.Name = "lb04";
             this.lb04.Size = new System.Drawing.Size(116, 34);
             this.lb04.TabIndex = 23;
@@ -211,7 +211,7 @@
             this.lb05.BackColor = System.Drawing.Color.Transparent;
             this.lb05.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb05.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb05.Location = new System.Drawing.Point(565, 262);
+            this.lb05.Location = new System.Drawing.Point(572, 308);
             this.lb05.Name = "lb05";
             this.lb05.Size = new System.Drawing.Size(282, 34);
             this.lb05.TabIndex = 24;
@@ -223,7 +223,7 @@
             this.lb06.BackColor = System.Drawing.Color.Transparent;
             this.lb06.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb06.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb06.Location = new System.Drawing.Point(565, 299);
+            this.lb06.Location = new System.Drawing.Point(574, 344);
             this.lb06.Name = "lb06";
             this.lb06.Size = new System.Drawing.Size(192, 34);
             this.lb06.TabIndex = 25;
@@ -235,7 +235,7 @@
             this.lb07.BackColor = System.Drawing.Color.Transparent;
             this.lb07.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb07.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb07.Location = new System.Drawing.Point(564, 335);
+            this.lb07.Location = new System.Drawing.Point(573, 380);
             this.lb07.Name = "lb07";
             this.lb07.Size = new System.Drawing.Size(135, 34);
             this.lb07.TabIndex = 26;
@@ -259,7 +259,7 @@
             this.lab_tinhtrang.BackColor = System.Drawing.Color.Transparent;
             this.lab_tinhtrang.Font = new System.Drawing.Font("Arial", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_tinhtrang.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.lab_tinhtrang.Location = new System.Drawing.Point(84, 290);
+            this.lab_tinhtrang.Location = new System.Drawing.Point(121, 342);
             this.lab_tinhtrang.Name = "lab_tinhtrang";
             this.lab_tinhtrang.Size = new System.Drawing.Size(0, 42);
             this.lab_tinhtrang.TabIndex = 36;
@@ -270,7 +270,7 @@
             this.lab_giogiat.BackColor = System.Drawing.Color.Transparent;
             this.lab_giogiat.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.lab_giogiat.ForeColor = System.Drawing.Color.Indigo;
-            this.lab_giogiat.Location = new System.Drawing.Point(880, 337);
+            this.lab_giogiat.Location = new System.Drawing.Point(870, 382);
             this.lab_giogiat.Name = "lab_giogiat";
             this.lab_giogiat.Size = new System.Drawing.Size(0, 35);
             this.lab_giogiat.TabIndex = 42;
@@ -281,7 +281,7 @@
             this.lab_luongmua.BackColor = System.Drawing.Color.Transparent;
             this.lab_luongmua.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.lab_luongmua.ForeColor = System.Drawing.Color.Indigo;
-            this.lab_luongmua.Location = new System.Drawing.Point(880, 302);
+            this.lab_luongmua.Location = new System.Drawing.Point(870, 347);
             this.lab_luongmua.Name = "lab_luongmua";
             this.lab_luongmua.Size = new System.Drawing.Size(0, 35);
             this.lab_luongmua.TabIndex = 41;
@@ -292,7 +292,7 @@
             this.lab_apsuat.BackColor = System.Drawing.Color.Transparent;
             this.lab_apsuat.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.lab_apsuat.ForeColor = System.Drawing.Color.Indigo;
-            this.lab_apsuat.Location = new System.Drawing.Point(880, 262);
+            this.lab_apsuat.Location = new System.Drawing.Point(870, 307);
             this.lab_apsuat.Name = "lab_apsuat";
             this.lab_apsuat.Size = new System.Drawing.Size(0, 35);
             this.lab_apsuat.TabIndex = 40;
@@ -303,7 +303,7 @@
             this.lab_doam.BackColor = System.Drawing.Color.Transparent;
             this.lab_doam.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.lab_doam.ForeColor = System.Drawing.Color.Indigo;
-            this.lab_doam.Location = new System.Drawing.Point(880, 228);
+            this.lab_doam.Location = new System.Drawing.Point(870, 273);
             this.lab_doam.Name = "lab_doam";
             this.lab_doam.Size = new System.Drawing.Size(0, 35);
             this.lab_doam.TabIndex = 39;
@@ -314,7 +314,7 @@
             this.lab_tdgio.BackColor = System.Drawing.Color.Transparent;
             this.lab_tdgio.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.lab_tdgio.ForeColor = System.Drawing.Color.Indigo;
-            this.lab_tdgio.Location = new System.Drawing.Point(880, 191);
+            this.lab_tdgio.Location = new System.Drawing.Point(870, 236);
             this.lab_tdgio.Name = "lab_tdgio";
             this.lab_tdgio.Size = new System.Drawing.Size(0, 35);
             this.lab_tdgio.TabIndex = 38;
@@ -325,7 +325,7 @@
             this.lab_nhietdo.BackColor = System.Drawing.Color.Transparent;
             this.lab_nhietdo.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold);
             this.lab_nhietdo.ForeColor = System.Drawing.Color.Gold;
-            this.lab_nhietdo.Location = new System.Drawing.Point(263, 206);
+            this.lab_nhietdo.Location = new System.Drawing.Point(300, 258);
             this.lab_nhietdo.Name = "lab_nhietdo";
             this.lab_nhietdo.Size = new System.Drawing.Size(0, 70);
             this.lab_nhietdo.TabIndex = 43;
@@ -347,13 +347,13 @@
             this.btn_chitiet01.BackColor = System.Drawing.Color.Gray;
             this.btn_chitiet01.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.btn_chitiet01.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet01.Location = new System.Drawing.Point(377, 483);
+            this.btn_chitiet01.Location = new System.Drawing.Point(369, 505);
             this.btn_chitiet01.Margin = new System.Windows.Forms.Padding(4);
             this.btn_chitiet01.Name = "btn_chitiet01";
             this.btn_chitiet01.Size = new System.Drawing.Size(360, 62);
             this.btn_chitiet01.TabIndex = 3;
             this.btn_chitiet01.Tag = "";
-            this.btn_chitiet01.Text = "Thông tin thời tiết về 7 ngày tới";
+            this.btn_chitiet01.Text = "Thông tin thời tiết về 5 ngày tới";
             this.btn_chitiet01.UseVisualStyleBackColor = false;
             this.btn_chitiet01.Click += new System.EventHandler(this.btn_chitiet01_Click);
             // 

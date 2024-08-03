@@ -43,6 +43,7 @@ namespace WeatherApp
             {
                 using (WebClient web = new WebClient())
                 {
+                    // Mã hóa dữ liệu nhập vào
                     string cityName = Uri.EscapeDataString(tbCity.Text);
                     string url = string.Format("https://api.openweathermap.org/data/2.5/forecast?q={0}&appid={1}&units=metric", cityName, APIKey);
 
@@ -55,8 +56,14 @@ namespace WeatherApp
                         // Assuming we want to display the first forecast entry
                         var forecast = info.List[0];
 
-                        string iconUrl = "https://openweathermap.org/img/w/" + forecast.Weather[0].Icon + ".png";
-                        LoadAndResizeImage(iconUrl);
+                        string img = "https://openweathermap.org/img/w/" + forecast.Weather[0].Icon + ".png";
+
+                        // Set the size of the PictureBox (increase size as needed)
+                        pic_icon.Size = new System.Drawing.Size(170,170);
+
+                        // Set the SizeMode to stretch the image to fit the PictureBox
+                        pic_icon.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pic_icon.Load(img);
 
                         lab_ngay01.Text = DateTime.Now.ToString("dd MMMM yyyy");
                         lab_thoigian.Text = DateTime.Now.ToString("dddd HH:mm:ss");
@@ -100,7 +107,8 @@ namespace WeatherApp
                 MessageBox.Show("Error retrieving weather data: " + ex.Message);
             }
         }
-
+        
+        // Ẩn form khi chưa tìm kiếm
         private void HideControls()
         {
             lab_nhietdo.Visible = false;
@@ -131,6 +139,7 @@ namespace WeatherApp
             pic_icon.Visible = false;
         }
 
+        // Hiện thị form sau khi tìm kiếm
         private void ShowControls()
         {
             lab_nhietdo.Visible = true;
@@ -160,29 +169,6 @@ namespace WeatherApp
 
 
             pic_icon.Visible = true;
-        }
-
-        private void LoadAndResizeImage(string url)
-        {
-            try
-            {
-                using (WebClient webClient = new WebClient())
-                {
-                    byte[] imageBytes = webClient.DownloadData(url);
-                    using (MemoryStream stream = new MemoryStream(imageBytes))
-                    {
-                        using (Image originalImage = Image.FromStream(stream))
-                        {
-                            // Resize the image to fit the PictureBox
-                            pic_icon.Image = ResizeImage(originalImage, pic_icon.Width, pic_icon.Height);
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading image: " + ex.Message);
-            }
         }
 
         private Image ResizeImage(Image image, int width, int height)
