@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace WeatherApp
 {
-    internal class WeatherInfo
+    public class WeatherInfo // Changed to public
     {
         public class Main
         {

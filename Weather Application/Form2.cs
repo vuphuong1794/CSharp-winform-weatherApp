@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AppWeather;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using AppWeather;
 
 namespace WeatherApp
 {
@@ -15,7 +15,7 @@ namespace WeatherApp
         private WeatherInfo.Root data;
         private string cityName;
         private const string APIKey = "4359ef1cd11b4c97b0da50cce76d01e7";
-        //4359ef1cd11b4c97b0da50cce76d01e7
+
         public Form2(string City)
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace WeatherApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error retrieving weather data: {ex.Message}");
+                MessageBox.Show($"Lỗi khi lấy dữ liệu thời tiết: {ex.Message}");
             }
         }
 
@@ -49,73 +49,32 @@ namespace WeatherApp
         {
             if (data != null && data.List != null && data.List.Count > 0)
             {
-                var weatherList = data.List;
-
-                // Lấy dự báo cho 6 ngày tiếp theo
-                var forecasts = weatherList
+                var forecasts = data.List
                     .GroupBy(x => DateTime.Parse(x.DtTxt).Date)
                     .Select(g => g.First())
-                    .Skip(1)  // Bỏ qua ngày hôm nay
-                    .Take(6)  // Lấy 6 ngày tiếp theo
+                    .Skip(1)
+                    .Take(5)
                     .ToList();
-                using (StreamWriter writer = new StreamWriter("log.txt", true))
-                {
-                    writer.WriteLine("Number of forecasts: " + forecasts.Count);
-                }
-                if (forecasts.Count > 0)
-                {
-                    dateLabel1.Text = DateTime.Parse(forecasts[0].DtTxt).ToString("dd/MM/yyyy");
-                    temperatureLabel1.Text = forecasts[0].Main.Temp.ToString("F1") + " °C";
-                    string imgUrl1 = "http://openweathermap.org/img/w/" + forecasts[0].Weather[0].Icon + ".png";
-                    LoadImage(weatherIconBox1, imgUrl1);
-                }
 
-                if (forecasts.Count > 1)
-                {
-                    dateLabel2.Text = DateTime.Parse(forecasts[1].DtTxt).ToString("dd/MM/yyyy");
-                    temperatureLabel2.Text = forecasts[1].Main.Temp.ToString("F1") + " °C";
-                    string imgUrl2 = "http://openweathermap.org/img/w/" + forecasts[1].Weather[0].Icon + ".png";
-                    LoadImage(weatherIconBox2, imgUrl2);
-                    dateLabel2.Visible = true;
-                    temperatureLabel2.Visible = true;
-                    weatherIconBox2.Visible = true;
-                    detalisBtn2.Visible = true;
-                }
-
-                if (forecasts.Count > 2)
-                {
-                    dateLabel3.Text = DateTime.Parse(forecasts[2].DtTxt).ToString("dd/MM/yyyy");
-                    TemperatureLabel3.Text = forecasts[2].Main.Temp.ToString("F1") + " °C";
-                    string imgUrl3 = "http://openweathermap.org/img/w/" + forecasts[2].Weather[0].Icon + ".png";
-                    LoadImage(weatherIconBox3, imgUrl3);
-                    dateLabel3.Visible = true;
-                    TemperatureLabel3.Visible = true;
-                    weatherIconBox3.Visible = true;
-                    detalisBtn3.Visible = true;
-                }
-
-                if (forecasts.Count > 3)
-                {
-                    dateLabel4.Text = DateTime.Parse(forecasts[3].DtTxt).ToString("dd/MM/yyyy");
-                    temperatureLabel4.Text = forecasts[3].Main.Temp.ToString("F1") + " °C";
-                    string imgUrl3 = "http://openweathermap.org/img/w/" + forecasts[3].Weather[0].Icon + ".png";
-                    LoadImage(weatherIconBox4, imgUrl3);
-                    dateLabel4.Visible = true;
-                    temperatureLabel4.Visible = true;
-                    weatherIconBox4.Visible = true;
-                    detalisBtn4.Visible = true;
-                }
-
-                /* // Hiển thị tên thành phố (nếu có)
-                 if (data.City != null)
-                 {
-                     label1.Text = data.City.Name;
-                 }*/
+                DisplayForecast(forecasts[0], dateLabel1, temperatureLabel1, weatherIconBox1, detalisBtn1);
+                if (forecasts.Count > 1) DisplayForecast(forecasts[1], dateLabel2, temperatureLabel2, weatherIconBox2, detalisBtn2);
+                if (forecasts.Count > 2) DisplayForecast(forecasts[2], dateLabel3, TemperatureLabel3, weatherIconBox3, detalisBtn3);
+                if (forecasts.Count > 3) DisplayForecast(forecasts[3], dateLabel4, TemperatureLabel4, weatherIconBox4, detalisBtn4);
+                if (forecasts.Count > 4) DisplayForecast(forecasts[4], dateLabel5, TemperatureLabel5, weatherIconBox5, detalisBtn5);
             }
             else
             {
-                MessageBox.Show("Weather data is not available.");
+                MessageBox.Show("Dữ liệu thời tiết không khả dụng.");
             }
+        }
+
+        private void DisplayForecast(WeatherInfo.Forecast forecast, Label dateLabel, Label tempLabel, PictureBox iconBox, Button detailsButton)
+        {
+            dateLabel.Text = DateTime.Parse(forecast.DtTxt).ToString("dd/MM/yyyy");
+            tempLabel.Text = forecast.Main.Temp.ToString("F1") + " °C";
+            string imgUrl = "http://openweathermap.org/img/w/" + forecast.Weather[0].Icon + ".png";
+            LoadImage(iconBox, imgUrl);
+            dateLabel.Visible = tempLabel.Visible = iconBox.Visible = detailsButton.Visible = true;
         }
 
         private void LoadImage(PictureBox pictureBox, string url)
@@ -130,80 +89,29 @@ namespace WeatherApp
             }
         }
 
-        private void detalisBtn1_Click(object sender, EventArgs e)
-        {
-            ShowDetails(0);
-        }
-
-        private void detalisBtn2_Click(object sender, EventArgs e)
-        {
-            ShowDetails(1);
-        }
-
-        private void detalisBtn3_Click(object sender, EventArgs e)
-        {
-            ShowDetails(2);
-        }
-
-        private void detalisBtn4_Click(object sender, EventArgs e)
-        {
-            ShowDetails(3);
-        }
+        private void detalisBtn1_Click(object sender, EventArgs e) => ShowDetails(0);
+        private void detalisBtn2_Click(object sender, EventArgs e) => ShowDetails(1);
+        private void detalisBtn3_Click(object sender, EventArgs e) => ShowDetails(2);
+        private void detalisBtn4_Click(object sender, EventArgs e) => ShowDetails(3);
+        private void detalisBtn5_Click(object sender, EventArgs e) => ShowDetails(4);
 
         private void ShowDetails(int index)
         {
             if (data != null && data.List != null && data.List.Count > 0)
             {
-                var forecasts = data.List
-                    .GroupBy(x => DateTime.Parse(x.DtTxt).Date)
-                    .Select(g => g.First())
-                    .Skip(1)  // Bỏ qua ngày hôm nay
-                    .Take(4)  // Lấy 4 ngày tiếp theo
+                var selectedDay = DateTime.Parse(data.List[0].DtTxt).Date.AddDays(index + 1);
+                var hourlyForecasts = data.List
+                    .Where(x => DateTime.Parse(x.DtTxt).Date == selectedDay)
                     .ToList();
 
-                if (forecasts.Count > index)
-                {
-                    var weatherDetails = forecasts[index];
-
-                    Form3 form = new Form3(
-                        weatherDetails.DtTxt,
-                        weatherDetails.Main.TempMin.ToString("F1"),
-                        weatherDetails.Main.TempMax.ToString("F1"),
-                        weatherDetails.Main.Pressure.ToString(),
-                        weatherDetails.Wind.Speed.ToString(),
-                        weatherDetails.Main.Humidity.ToString(),
-                        weatherDetails.Weather[0].Description,
-                        weatherDetails.Weather[0].Icon,
-                        weatherDetails.Wind.Gust?.ToString("0.00") ?? "N/A",
-                        weatherDetails.Rain?.Rain3h?.ToString("0.0") ?? "N/A"
-                    );
-                    form.Show();
-                }
+                Form3 form = new Form3(selectedDay.ToString("dd/MM/yyyy"), hourlyForecasts);
+                form.Show();
             }
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
-
-        // Các phương thức xử lý sự kiện khác
-        private void temperatureL_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }
