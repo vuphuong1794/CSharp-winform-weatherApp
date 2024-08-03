@@ -257,7 +257,7 @@
             this.lab_ngay01.BackColor = System.Drawing.Color.Transparent;
             this.lab_ngay01.Font = new System.Drawing.Font("Arial Black", 15F, System.Drawing.FontStyle.Bold);
             this.lab_ngay01.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(0)))), ((int)(((byte)(77)))));
-            this.lab_ngay01.Location = new System.Drawing.Point(8, 34);
+            this.lab_ngay01.Location = new System.Drawing.Point(595, 32);
             this.lab_ngay01.Name = "lab_ngay01";
             this.lab_ngay01.Size = new System.Drawing.Size(0, 28);
             this.lab_ngay01.TabIndex = 1;
@@ -352,7 +352,7 @@
             this.lab_thoigian.BackColor = System.Drawing.Color.Transparent;
             this.lab_thoigian.Font = new System.Drawing.Font("Arial Black", 15F, System.Drawing.FontStyle.Bold);
             this.lab_thoigian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(0)))), ((int)(((byte)(77)))));
-            this.lab_thoigian.Location = new System.Drawing.Point(593, 54);
+            this.lab_thoigian.Location = new System.Drawing.Point(40, 32);
             this.lab_thoigian.Name = "lab_thoigian";
             this.lab_thoigian.Size = new System.Drawing.Size(0, 28);
             this.lab_thoigian.TabIndex = 2;

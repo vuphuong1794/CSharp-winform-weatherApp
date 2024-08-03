@@ -69,3 +69,19 @@ D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weat
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form4.resources
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.dll
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.xml
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form1.resources
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form2.resources
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form3.resources
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form4.resources
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
+D:\git\LTM\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
