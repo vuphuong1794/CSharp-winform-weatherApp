@@ -24,6 +24,11 @@ namespace AppWeather
             
         }
 
+        private void ttchitiet_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private async void Form4_Load(object sender, EventArgs e)
         {
             displayWeather();
