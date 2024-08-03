@@ -72,21 +72,14 @@ namespace WeatherApp
         {
             dateLabel.Text = DateTime.Parse(forecast.DtTxt).ToString("dd/MM/yyyy");
             tempLabel.Text = forecast.Main.Temp.ToString("F1") + " °C";
-            string imgUrl = "http://openweathermap.org/img/w/" + forecast.Weather[0].Icon + ".png";
-            LoadImage(iconBox, imgUrl);
-            dateLabel.Visible = tempLabel.Visible = iconBox.Visible = detailsButton.Visible = true;
-        }
+            string img = "http://openweathermap.org/img/w/" + forecast.Weather[0].Icon + ".png";
 
-        private void LoadImage(PictureBox pictureBox, string url)
-        {
-            using (WebClient client = new WebClient())
-            {
-                byte[] imageData = client.DownloadData(url);
-                using (var ms = new System.IO.MemoryStream(imageData))
-                {
-                    pictureBox.Image = Image.FromStream(ms);
-                }
-            }
+            iconBox.Size = new System.Drawing.Size(150, 150); // Example size: 200x200 pixels
+
+            iconBox.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            iconBox.Load(img);
+            dateLabel.Visible = tempLabel.Visible = iconBox.Visible = detailsButton.Visible = true;
         }
 
         private void detalisBtn1_Click(object sender, EventArgs e) => ShowDetails(0);
