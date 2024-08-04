@@ -21,7 +21,12 @@ namespace AppWeather
             this.icon = icon;
             this.tg = tg;
             this.tt = tt;
-            
+
+        }
+
+        private void ttchitiet_Click(object sender, EventArgs e)
+        {
+
         }
 
         private async void Form4_Load(object sender, EventArgs e)
@@ -48,7 +53,7 @@ namespace AppWeather
             weatherIconBox1.Load(img);
         }
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
